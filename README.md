@@ -16,4 +16,4 @@ This repository tracks the intersection of environmental shifts and public healt
 
 ## Author
 **Tehreem Fatima** 
-BS Medical Laboratory Technology | Digital SEO & Data Science
+BS Medical Laboratory Technology | Data Science
