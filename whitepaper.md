@@ -48,7 +48,7 @@ You are aging faster on a cellular level. Your baseline stress is higher, your i
 Air toxicity is fundamentally unequal. It devastates outdoor workers, street vendors, and children who play outside or walk to school. During peak smog season, local health clinics and emergency rooms are overwhelmed by asthma attacks, forcing communities to spend their limited resources on emergency respiratory care.
 
 ### The National and Economic Drain
-For Pakistan, this is an economic hemorrhage. The national economy loses billions of rupees annually due to the healthcare costs of treating pollution-induced illnesses. Furthermore, the loss of labor productivity—sick days, shortened lifespans, and reduced cognitive capacity in the workforce—stunts the GDP and cripples long-term national development.
+For Pakistan, this is an economic hemorrhage. The national economy loses billions of rupees annually due to the healthcare costs of treating pollution-induced illnesses. Furthermore, the loss of labor productivity, sick days, shortened lifespans, and reduced cognitive capacity in the workforce, stunts the GDP and cripples long-term national development.
 
 ---
 
@@ -72,7 +72,7 @@ While we push for systemic change, you must protect yourself and your family tod
 
 ### What NOT To Do (The Don'ts)
 * **Don't rely on cloth or surgical masks:** Blue surgical masks and fabric coverings do absolutely nothing against $PM_{2.5}$. They only stop large dust. 
-* **Don't exercise outdoors during rush hour:** Jogging or playing sports in the early morning or evening when traffic is heaviest—and temperature inversions trap smog, forces pollution deep into your lungs.
+* **Don't exercise outdoors during rush hour:** Jogging or playing sports in the early morning or evening when traffic is heaviest and temperature inversions trap smog, forces pollution deep into your lungs.
 * **Don't burn biomass:** Avoid backyard trash burning, leaf burning, and using open solid-fuel stoves in enclosed courtyards. These create hyper-toxic microenvironments.
 * **Don't open windows indiscriminately:** "Fresh air" during winter evenings or peak traffic is often toxic air. 
 
