@@ -7,7 +7,7 @@
 ---
 
 ## 1. The Atmospheric Crisis in Pakistan
-Pakistan is currently facing a slow-moving public health emergency. Major urban corridors from Lahore to Karachi are consistently ranked among the most polluted in the world. The core of this crisis is $PM_{2.5}$—particulate matter so infinitesimally small (less than 2.5 micrometers in diameter) that it is entirely invisible to the naked eye. While we experience this as "winter smog" or a hazy sky, the reality is that we are breathing in suspended toxic cocktails of heavy metals, soot, and chemical compounds. 
+Pakistan is currently facing a slow-moving public health emergency. Major urban corridors from Lahore to Karachi are consistently ranked among the most polluted in the world. The core of this crisis is $PM {2.5}$ particulate matter so infinitesimally small (less than 2.5 micrometers in diameter) that it is entirely invisible to the naked eye. While we experience this as "winter smog" or a hazy sky, the reality is that we are breathing in suspended toxic cocktails of heavy metals, soot, and chemical compounds. 
 
 ### The Root Causes
 This crisis is not a natural phenomenon; it is a byproduct of intersecting human activities:
@@ -19,9 +19,9 @@ This crisis is not a natural phenomenon; it is a byproduct of intersecting human
 ---
 
 ## 2. From Lungs to DNA: Teaching Epigenetics
-When you breathe in $PM_{2.5}$, it doesn't just irritate your throat. Because these particles are microscopic, they bypass the body's natural filters, traveling deep into the lungs and crossing directly into the bloodstream.
+When you breathe in $PM {2.5}$, it doesn't just irritate your throat. Because these particles are microscopic, they bypass the body's natural filters, traveling deep into the lungs and crossing directly into the bloodstream.
 
-Once in your blood, these toxins begin to alter how your body functions at the deepest possible level—your DNA—through a process called **epigenetics**. 
+Once in your blood, these toxins begin to alter how your body functions at the deepest possible level your DNA through a process called **epigenetics**. 
 
 Think of your DNA as the hardware of a computer, and epigenetics as the software that tells the hardware what to do. Air toxicity acts like a virus hacking that software. It doesn't change your genetic code, but it flips the "on/off" switches for certain genes:
 * **Turning ON Inflammation:** Toxins strip away protective chemical tags (a process called *hypomethylation*), causing your immune system to hyper-react. Your body gets locked in a state of chronic, damaging inflammation.
@@ -72,14 +72,14 @@ While we push for systemic change, you must protect yourself and your family tod
 
 ### What NOT To Do (The Don'ts)
 * **Don't rely on cloth or surgical masks:** Blue surgical masks and fabric coverings do absolutely nothing against $PM_{2.5}$. They only stop large dust. 
-* **Don't exercise outdoors during rush hour:** Jogging or playing sports in the early morning or evening when traffic is heaviest—and temperature inversions trap smog—forces pollution deep into your lungs.
+* **Don't exercise outdoors during rush hour:** Jogging or playing sports in the early morning or evening when traffic is heaviest—and temperature inversions trap smog, forces pollution deep into your lungs.
 * **Don't burn biomass:** Avoid backyard trash burning, leaf burning, and using open solid-fuel stoves in enclosed courtyards. These create hyper-toxic microenvironments.
 * **Don't open windows indiscriminately:** "Fresh air" during winter evenings or peak traffic is often toxic air. 
 
 ### What You MUST Do (The Do's)
 * **Do wear N95 or KN95 respirators:** If you must be outside during hazardous conditions, only properly fitted N95/KN95 masks can filter out microscopic heavy metals and soot.
-* **Do build your nutritional armor:** Fight cellular "rust" (oxidative stress) from the inside out. Eat a diet rich in natural antioxidants—citrus fruits, berries, dark leafy greens, and green tea. This gives your body the biochemical tools to neutralize toxic damage.
-* **Do engineer your indoor air:** Seal gaps around windows and doors. If commercial HEPA purifiers are too expensive, build a **Corsi-Rosenthal Box**—a highly effective, low-cost DIY purifier made by taping four standard MERV-13 air conditioning filters to an ordinary box fan. 
+* **Do build your nutritional armor:** Fight cellular "rust" (oxidative stress) from the inside out. Eat a diet rich in natural antioxidants: citrus fruits, berries, dark leafy greens, and green tea. This gives your body the biochemical tools to neutralize toxic damage.
+* **Do engineer your indoor air:** Seal gaps around windows and doors. If commercial HEPA purifiers are too expensive, build a **Corsi-Rosenthal Box** a highly effective, low-cost DIY purifier made by taping four standard MERV-13 air conditioning filters to an ordinary box fan. 
 * **Do time your ventilation:** Only open windows to air out your home during clear, breezy afternoons when the sun has burned off the smog layer.
 
 ---
@@ -87,7 +87,7 @@ While we push for systemic change, you must protect yourself and your family tod
 ## 8. The 15-Node Eco-Health Tracking Matrix
 To fight the problem, we must map it. The data below outlines the real-time clinical and molecular risks across 15 major urban centers in Pakistan:
 
-| Location | City | $PM_{2.5}$ ($\mu	ext{g/m}^3$) | Molecular/Epigenetic Risk | Community Action Required |
+| Location | City | $PM {2.5}$ ($\mu	ext{g/m}^3$) | Molecular/Epigenetic Risk | Community Action Required |
 | :--- | :--- | :--- | :--- | :--- |
 | **Rawalpindi Saddar** | Rawalpindi | 185.4 | Inflammatory Hypomethylation | High risk of internal inflammation. Maximize dietary antioxidants. |
 | **Rawalpindi Murree Rd** | Rawalpindi | 160.5 | Inflammatory Hypomethylation | Targeted immune system stress. Limit outdoor physical exertion. |
