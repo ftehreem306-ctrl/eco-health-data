@@ -1,0 +1,31 @@
+name: Discover PM2.5 locations in Pakistan
+
+# Run this by hand (Actions tab -> "Discover PM2.5 locations in Pakistan" -> Run workflow).
+# It writes data/candidates.json: every OpenAQ location in Pakistan that reports PM2.5,
+# with the time of its last reading, provider, owner and licence.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: List locations
+        env:
+          OPENAQ_API_KEY: ${{ secrets.OPENAQ_API_KEY }}
+        run: python scripts/fetch_pm25.py --discover
+      - name: Commit the list
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/candidates.json
+          git diff --cached --quiet || (git commit -m "List PM2.5 locations in Pakistan" && git push)
