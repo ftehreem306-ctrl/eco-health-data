@@ -1,13 +1,13 @@
 # PM2.5 Air Pollution and Health in Pakistan: A Referenced Overview
 
-**Tehreem Fatima**, BS Medical Laboratory Technology (final year), NUMS, Pakistan
+**Tehreem Fatima**, BS Medical Laboratory Technology (final year), NUMS, Pakistan  
 Eco-Health Action Hub · 13 November 2026
 
 ---
 
 ## Summary
 
-This paper summarises published evidence on fine particulate matter (PM2.5) and health, focusing on Pakistan. Meta-analyses of cohort studies link long-term PM2.5 exposure with higher mortality [15,16]. The International Agency for Research on Cancer classifies particulate matter in outdoor air as carcinogenic to humans [18]. Modelled estimates attribute more than 200,000 deaths in Pakistan in 2023 to air pollution [13]. A satellite-based estimate puts Pakistan's average PM2.5 in 2023 at about 39 µg/m³ [6], against a World Health Organization (WHO) annual guideline of 5 µg/m³ [3]. Randomised trials of portable HEPA air cleaners [28,29] and of facemasks [32,33] have measured short-term outcomes such as blood pressure. The evidence for diet and supplements is limited [37]. Human studies of PM2.5 and DNA methylation are inconsistent, and none has shown that these changes cause disease [21–23]. This paper is educational information, not medical advice.
+This paper summarises published evidence on fine particulate matter (PM2.5) and health, focusing on Pakistan. Meta-analyses of cohort studies link long-term PM2.5 exposure with higher mortality [15,16]. The International Agency for Research on Cancer classifies particulate matter in outdoor air as carcinogenic to humans [18]. Modelled estimates attribute more than 200,000 deaths in Pakistan in 2023 to air pollution [13]. A satellite-based estimate puts Pakistan's average PM2.5 in 2023 at about 39 µg/m³ [6], against a World Health Organization (WHO) annual guideline of 5 µg/m³ [3]. Randomised trials of portable HEPA air cleaners [28,29] and of facemasks [32,33] have measured short-term outcomes such as blood pressure. The evidence for diet and supplements is limited [38]. Human studies of PM2.5 and DNA methylation are inconsistent, and none has shown that these changes cause disease [21–23]. This paper is educational information, not medical advice.
 
 ---
 
@@ -29,7 +29,7 @@ Official sources disagree about Pakistan's national standard:
 
 The original Gazette notification was not opened during the evidence review, so it could not be confirmed which value is currently in force.
 
-Punjab notified its own Environmental Quality Standards for Ambient Air in 2016 [9]. The World Bank describes Punjab's annual standard as 15 µg/m³ [8].
+The World Bank describes Punjab's annual standard as 15 µg/m³ [8]. Punjab notified its own Environmental Quality Standards for Ambient Air in 2016 [9].
 
 ### 1.3 The scale used for risk categories
 
@@ -211,39 +211,40 @@ The evidence labels follow the strength ratings in this project's evidence table
 - These trials measured short-term outcomes, not heart attacks or deaths [33].
 - The evidence review found no primary source for the filtration percentages of N95, KN95, FFP2, surgical or cloth masks, so none are given.
 
-**Checking air quality and reducing outdoor exertion: moderate.** Official AQI advice for PM2.5 gets stricter as the category rises [12]:
+**Checking air quality and reducing outdoor exertion: moderate.** Official AQI advice for PM2.5 gets stricter as the category rises [12,34]:
 
 | AQI category | Sensitive groups | Everyone else |
 |---|---|---|
+| Moderate | Unusually sensitive people: consider reducing prolonged or heavy exertion [34] | — |
 | Unhealthy for Sensitive Groups | Make outdoor activity shorter and less intense | — |
 | Unhealthy | Avoid long or intense outdoor activity | Reduce long or intense outdoor activity |
 | Very Unhealthy | Avoid all outdoor physical activity | Avoid long or intense outdoor activity |
 | Hazardous | Remain indoors and keep activity levels low | — |
 
-A European Respiratory Society review grades personal strategies by strength of evidence [34]. These include checking forecasts, staying indoors, using air cleaners and wearing masks, and choosing low-pollution travel routes is graded C [34]. WHO Europe also advises exercising away from pollution sources [30].
+A European Respiratory Society review grades personal strategies by strength of evidence [35]. These include checking forecasts, staying indoors, using air cleaners and wearing masks, and choosing low-pollution travel routes is graded C [35]. WHO Europe also advises exercising away from pollution sources [30].
 
-**Keeping windows closed during pollution peaks: limited.** A review of household measures reports a study in which indoor PM2.5, blood pressure and heart rate were higher with windows open than with windows closed [35].
+**Keeping windows closed during pollution peaks: limited.** A review of household measures reports a study in which indoor PM2.5, blood pressure and heart rate were higher with windows open than with windows closed [36].
 
-**Do-it-yourself box-fan filters (Corsi-Rosenthal boxes): limited.** In a laboratory chamber, a box fan with five MERV-13 filters reached an effective clean air delivery rate of about 600–850 cubic feet per minute, depending on fan speed [36]. Particles were counted with an instrument whose median particle size was about 1.2 µm, so the result is not a measure of PM2.5 mass [36]. No health studies were found.
+**Do-it-yourself box-fan filters (Corsi-Rosenthal boxes): limited.** In a laboratory chamber, a box fan with five MERV-13 filters reached an effective clean air delivery rate of about 600–850 cubic feet per minute, depending on fan speed [37]. Particles were counted with an instrument whose median particle size was about 1.2 µm, so the result is not a measure of PM2.5 mass [37]. No health studies were found.
 
 **Not burning household waste: moderate evidence of contribution.** Municipal waste burning accounts for about 7% of population-weighted PM2.5 in Punjab [8]. No study of the personal health benefit of not burning waste was found. An earlier claim that waste burning is "hundreds of times more hazardous than traffic" had no source and has been removed.
 
-**Diet and supplements: limited.** A review in a European Respiratory Society journal graded the evidence for every dietary and supplement category as C, and found that the evidence for omega-3 and N-acetylcysteine was mostly observational [37]. This project does not recommend supplements as protection against PM2.5.
+**Diet and supplements: limited.** A review in a European Respiratory Society journal graded the evidence for every dietary and supplement category as C, and found that the evidence for omega-3 and N-acetylcysteine was mostly observational [38]. This project does not recommend supplements as protection against PM2.5.
 
 ---
 
 ## 5. What policy can do
 
-**London's Ultra Low Emission Zone (ULEZ).** The three evaluations disagree, mainly because they use different methods [38–40]:
+**London's Ultra Low Emission Zone (ULEZ).** The three evaluations disagree, mainly because they use different methods [39–41]:
 
-- The Greater London Authority estimated that the zone reduced roadside nitrogen dioxide (NO2) by about 29 µg/m³. That is 37% lower than a modelled scenario without the zone [38].
-- An independent causal analysis found that the ULEZ reduced NO2 by less than 3% on average, with no significant effect on ozone or PM2.5 [39].
-- A 2025 study found that NOx fell by 28.8% at central London traffic sites three months after the first phase. It found no detectable effect on NO2 from the 2023 London-wide expansion [40].
+- The Greater London Authority estimated that the zone reduced roadside nitrogen dioxide (NO2) by about 29 µg/m³. That is 37% lower than a modelled scenario without the zone [39].
+- An independent causal analysis found that the ULEZ reduced NO2 by less than 3% on average, with no significant effect on ozone or PM2.5 [40].
+- A 2025 study found that NOx fell by 28.8% at central London traffic sites three months after the first phase. It found no detectable effect on NO2 from the 2023 London-wide expansion [41].
 
 All three mainly concern NO2 and NOx, not PM2.5.
 
 **China's 2013 Action Plan.**
-- Between 2013 and 2017, China's population-weighted PM2.5 fell from 61.8 to 42.0 µg/m³, about 32%. Modelling estimated that the main measures prevented about 0.37 million deaths [41].
+- Between 2013 and 2017, China's population-weighted PM2.5 fell from 61.8 to 42.0 µg/m³, about 32%. Modelling estimated that the main measures prevented about 0.37 million deaths [42].
 - Studies summarised by the HEI found three results in areas covered by a clean-heating programme in northern China [13]:
   - Outdoor PM2.5 fell by 2.4–7 µg/m³ more than elsewhere.
   - Heart attacks fell by 6.6% in Beijing townships with high coverage.
@@ -307,11 +308,12 @@ Entries marked **[to validate in Phase 5]** have incomplete or unconfirmed bibli
 31. Cherrie JW, Apsley A, Cowie H, et al. Effectiveness of face masks used to protect Beijing residents against particulate air pollution. Occup Environ Med. 2018;75(6):446–52. doi:10.1136/oemed-2017-104765 **[to validate in Phase 5: full author list]**
 32. Langrish JP, Mills NL, Chan JKK, et al. Beneficial cardiovascular effects of reducing exposure to particulate air pollution with a simple facemask. Part Fibre Toxicol. 2009;6:8. doi:10.1186/1743-8977-6-8 **[to validate in Phase 5: full author list]**
 33. Langrish JP, Li X, Wang S, et al. Reducing personal exposure to particulate air pollution improves cardiovascular health in patients with coronary heart disease. Environ Health Perspect. 2012;120(3):367–72. Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3295351/ **[to validate in Phase 5: full author list]**
-34. Carlsten C, Salvi S, Wong GWK, Chung KF. Personal strategies to minimise effects of air pollution on respiratory health: advice for providers, patients and the public. Eur Respir J. 2020;55:1902056. doi:10.1183/13993003.02056-2019
-35. [Authors to validate in Phase 5]. Individual- and household-level interventions to reduce air pollution exposures and health risks: a review of the recent literature. Curr Environ Health Rep. 2020. doi:10.1007/s40572-020-00296-z
-36. Dal Porto R, Kunz MN, Pistochini T, Corsi RL, Cappa CD. Characterizing the performance of a do-it-yourself (DIY) box fan air filter. Aerosol Sci Technol. 2022. doi:10.1080/02786826.2022.2054674
-37. [Authors and year to validate in Phase 5]. Supplements and medications for respiratory resilience against air pollution. Breathe (European Respiratory Society). Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC13478882/
-38. Greater London Authority. Central London Ultra Low Emission Zone – ten month / evaluation report. London: GLA; 2021. Available from: https://www.london.gov.uk/sites/default/files/ulez_evaluation_report_2020-v8_finalfinal.pdf **[to validate in Phase 5: exact title and year]**
-39. Ma L, Graham DJ, Stettler MEJ. Has the ultra low emission zone in London improved air quality? Environ Res Lett. 2021;16:124001. doi:10.1088/1748-9326/ac30c1
-40. [Authors and journal to validate in Phase 5]. Further improvement in London's air quality demands more than the Ultra Low Emission Zone policy. 2025. Available from: https://www.nature.com/articles/s44407-025-00030-9
-41. Zhang Q, Zheng Y, Tong D, et al. Drivers of improved PM2.5 air quality in China from 2013 to 2017. Proc Natl Acad Sci U S A. 2019;116(49):24463–9. doi:10.1073/pnas.1907956116
+34. Agency for Toxic Substances and Disease Registry. PM Guidance for ATSDR Health Assessment Products, June 2024 update. Atlanta (GA): ATSDR; 2024. Available from: https://www.atsdr.cdc.gov/pha-guidance/resources/ATSDR-Particulate-Matter-Guidance-508.pdf (the same Moderate-category advice appears in: Utah Division of Air Quality. Forecast legend [Internet]. Available from: https://air.utah.gov/forecastLegendAQI.html)
+35. Carlsten C, Salvi S, Wong GWK, Chung KF. Personal strategies to minimise effects of air pollution on respiratory health: advice for providers, patients and the public. Eur Respir J. 2020;55:1902056. doi:10.1183/13993003.02056-2019
+36. [Authors to validate in Phase 5]. Individual- and household-level interventions to reduce air pollution exposures and health risks: a review of the recent literature. Curr Environ Health Rep. 2020. doi:10.1007/s40572-020-00296-z
+37. Dal Porto R, Kunz MN, Pistochini T, Corsi RL, Cappa CD. Characterizing the performance of a do-it-yourself (DIY) box fan air filter. Aerosol Sci Technol. 2022. doi:10.1080/02786826.2022.2054674
+38. [Authors and year to validate in Phase 5]. Supplements and medications for respiratory resilience against air pollution. Breathe (European Respiratory Society). Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC13478882/
+39. Greater London Authority. Central London Ultra Low Emission Zone – ten month / evaluation report. London: GLA; 2021. Available from: https://www.london.gov.uk/sites/default/files/ulez_evaluation_report_2020-v8_finalfinal.pdf **[to validate in Phase 5: exact title and year]**
+40. Ma L, Graham DJ, Stettler MEJ. Has the ultra low emission zone in London improved air quality? Environ Res Lett. 2021;16:124001. doi:10.1088/1748-9326/ac30c1
+41. [Authors and journal to validate in Phase 5]. Further improvement in London's air quality demands more than the Ultra Low Emission Zone policy. 2025. Available from: https://www.nature.com/articles/s44407-025-00030-9
+42. Zhang Q, Zheng Y, Tong D, et al. Drivers of improved PM2.5 air quality in China from 2013 to 2017. Proc Natl Acad Sci U S A. 2019;116(49):24463–9. doi:10.1073/pnas.1907956116
