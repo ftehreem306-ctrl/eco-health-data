@@ -1,0 +1,93 @@
+{
+  "name": "US EPA Air Quality Index (AQI) for PM2.5, as revised in 2024",
+  "averaging": "24-hour average concentration",
+  "units": "µg/m³",
+  "sources": [
+    {
+      "label": "US EPA Air Quality System – AQI breakpoints code table",
+      "url": "https://aqs.epa.gov/aqsweb/documents/codetables/aqi_breakpoints.html",
+      "whitepaper_ref": 11
+    },
+    {
+      "label": "North Carolina DEQ – 2024 PM2.5 annual standard (previous vs updated breakpoints)",
+      "url": "https://www.deq.nc.gov/about/divisions/air-quality/air-quality-planning/attainment/2024-pm25-annual-standard",
+      "whitepaper_ref": 10
+    }
+  ],
+  "action_sources": [
+    {
+      "label": "NOAA Virtual Lab – AQ FAQs, Air Quality Index for PM2.5 (reproduces EPA AQI messages)",
+      "url": "https://vlab.noaa.gov/web/osti-modeling/air-quality/faqs",
+      "whitepaper_ref": 12,
+      "evidence_row": "R19"
+    },
+    {
+      "label": "Utah Division of Air Quality – Forecast legend; ATSDR PM guidance (2024)",
+      "url": "https://air.utah.gov/forecastLegendAQI.html",
+      "whitepaper_ref": null,
+      "evidence_row": "R20",
+      "note": "Approved Phase 1 row R20; not yet cited in whitepaper.md. Add as a reference before publishing the Moderate action text."
+    }
+  ],
+  "sensitive_groups": "People with lung disease such as asthma, older adults, children and teenagers, and people who are active outdoors (NOAA reproduction of EPA AQI messages, row R19).",
+  "categories": [
+    {
+      "key": "good",
+      "label": "Good",
+      "min": 0.0,
+      "max": 9.0,
+      "aqi_range": "0–50",
+      "action_sensitive": null,
+      "action_everyone": null
+    },
+    {
+      "key": "moderate",
+      "label": "Moderate",
+      "min": 9.1,
+      "max": 35.4,
+      "aqi_range": "51–100",
+      "action_sensitive": "Unusually sensitive people should consider reducing prolonged or heavy exertion.",
+      "action_everyone": null
+    },
+    {
+      "key": "usg",
+      "label": "Unhealthy for Sensitive Groups",
+      "min": 35.5,
+      "max": 55.4,
+      "aqi_range": "101–150",
+      "action_sensitive": "Make outdoor activities shorter and less intense.",
+      "action_everyone": null
+    },
+    {
+      "key": "unhealthy",
+      "label": "Unhealthy",
+      "min": 55.5,
+      "max": 125.4,
+      "aqi_range": "151–200",
+      "action_sensitive": "Avoid long or intense outdoor activities.",
+      "action_everyone": "Reduce long or intense outdoor activities."
+    },
+    {
+      "key": "very_unhealthy",
+      "label": "Very Unhealthy",
+      "min": 125.5,
+      "max": 225.4,
+      "aqi_range": "201–300",
+      "action_sensitive": "Avoid all outdoor physical activity.",
+      "action_everyone": "Avoid long or intense outdoor activities."
+    },
+    {
+      "key": "hazardous",
+      "label": "Hazardous",
+      "min": 225.5,
+      "max": null,
+      "aqi_range": "301+",
+      "action_sensitive": "Remain indoors and keep activity levels low.",
+      "action_everyone": null
+    }
+  ],
+  "notes": [
+    "Action texts are paraphrased from approved evidence rows R19 and R20. Row R19 is a secondary federal reproduction; its wording, and the missing 'everyone' messages for Moderate and Hazardous, are to be checked against the primary AirNow page in Phase 5.",
+    "No action text is given for Good because no approved row supplies one."
+  ]
+}
