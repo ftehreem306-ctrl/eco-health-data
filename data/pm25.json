@@ -1,12 +1,563 @@
 {
-  "generated_utc": null,
+  "generated_utc": "2026-11-13T18:43:27Z",
   "data_source": {
     "name": "OpenAQ",
     "url": "https://openaq.org",
     "api": "OpenAQ API v3",
-    "note": "No data have been fetched yet."
+    "note": "Data belong to the providers named for each location; see each location's licence."
   },
-  "method": null,
-  "scale": null,
-  "locations": []
+  "method": {
+    "value": "Mean of hourly PM2.5 averages over the 24 hours before generated_utc",
+    "units": "µg/m³",
+    "window_hours": 24,
+    "min_hours_required": 18,
+    "stale_after_hours": 24,
+    "rounding": "Truncated to one decimal place before categorising",
+    "project_rules_note": "The 18-hour minimum, the truncation and the 24-hour staleness limit are this project's own rules."
+  },
+  "scale": {
+    "name": "US EPA Air Quality Index (AQI) for PM2.5, as revised in 2024",
+    "averaging": "24-hour average concentration",
+    "units": "µg/m³",
+    "sources": [
+      {
+        "label": "US EPA Air Quality System – AQI breakpoints code table",
+        "url": "https://aqs.epa.gov/aqsweb/documents/codetables/aqi_breakpoints.html",
+        "whitepaper_ref": 11
+      },
+      {
+        "label": "North Carolina DEQ – 2024 PM2.5 annual standard (previous vs updated breakpoints)",
+        "url": "https://www.deq.nc.gov/about/divisions/air-quality/air-quality-planning/attainment/2024-pm25-annual-standard",
+        "whitepaper_ref": 10
+      }
+    ],
+    "action_sources": [
+      {
+        "label": "NOAA Virtual Lab – AQ FAQs, Air Quality Index for PM2.5 (reproduces EPA AQI messages)",
+        "url": "https://vlab.noaa.gov/web/osti-modeling/air-quality/faqs",
+        "whitepaper_ref": 12,
+        "evidence_row": "R19"
+      },
+      {
+        "label": "Utah Division of Air Quality – Forecast legend; ATSDR PM guidance (2024)",
+        "url": "https://air.utah.gov/forecastLegendAQI.html",
+        "whitepaper_ref": null,
+        "evidence_row": "R20",
+        "note": "Approved Phase 1 row R20; not yet cited in whitepaper.md. Add as a reference before publishing the Moderate action text."
+      }
+    ],
+    "sensitive_groups": "People with lung disease such as asthma, older adults, children and teenagers, and people who are active outdoors (NOAA reproduction of EPA AQI messages, row R19).",
+    "categories": [
+      {
+        "key": "good",
+        "label": "Good",
+        "min": 0.0,
+        "max": 9.0,
+        "aqi_range": "0–50",
+        "action_sensitive": null,
+        "action_everyone": null
+      },
+      {
+        "key": "moderate",
+        "label": "Moderate",
+        "min": 9.1,
+        "max": 35.4,
+        "aqi_range": "51–100",
+        "action_sensitive": "Unusually sensitive people should consider reducing prolonged or heavy exertion.",
+        "action_everyone": null
+      },
+      {
+        "key": "usg",
+        "label": "Unhealthy for Sensitive Groups",
+        "min": 35.5,
+        "max": 55.4,
+        "aqi_range": "101–150",
+        "action_sensitive": "Make outdoor activities shorter and less intense.",
+        "action_everyone": null
+      },
+      {
+        "key": "unhealthy",
+        "label": "Unhealthy",
+        "min": 55.5,
+        "max": 125.4,
+        "aqi_range": "151–200",
+        "action_sensitive": "Avoid long or intense outdoor activities.",
+        "action_everyone": "Reduce long or intense outdoor activities."
+      },
+      {
+        "key": "very_unhealthy",
+        "label": "Very Unhealthy",
+        "min": 125.5,
+        "max": 225.4,
+        "aqi_range": "201–300",
+        "action_sensitive": "Avoid all outdoor physical activity.",
+        "action_everyone": "Avoid long or intense outdoor activities."
+      },
+      {
+        "key": "hazardous",
+        "label": "Hazardous",
+        "min": 225.5,
+        "max": null,
+        "aqi_range": "301+",
+        "action_sensitive": "Remain indoors and keep activity levels low.",
+        "action_everyone": null
+      }
+    ],
+    "notes": [
+      "Action texts are paraphrased from approved evidence rows R19 and R20. Row R19 is a secondary federal reproduction; its wording, and the missing 'everyone' messages for Moderate and Hazardous, are to be checked against the primary AirNow page in Phase 5.",
+      "No action text is given for Good because no approved row supplies one."
+    ]
+  },
+  "locations": [
+    {
+      "type": "openaq",
+      "display_name": "Civil Secretariat",
+      "city": "Lahore",
+      "openaq_location_id": 4527035,
+      "openaq_url": "https://explore.openaq.org/locations/4527035",
+      "status": "ok",
+      "pm25_24h_mean": 87.3,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Civil Secretariat",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 31.565942,
+      "longitude": 74.2993626,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Gulberg III",
+      "city": "Lahore",
+      "openaq_location_id": 4618814,
+      "openaq_url": "https://explore.openaq.org/locations/4618814",
+      "status": "ok",
+      "pm25_24h_mean": 98.3,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Gulberg III",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 31.508051,
+      "longitude": 74.337544,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Cantonment",
+      "city": "Lahore",
+      "openaq_location_id": 4698865,
+      "openaq_url": "https://explore.openaq.org/locations/4698865",
+      "status": "ok",
+      "pm25_24h_mean": 87.8,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Cantonment",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 31.539422,
+      "longitude": 74.413792,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "NED University City Campus",
+      "city": "Karachi",
+      "openaq_location_id": 4793473,
+      "openaq_url": "https://explore.openaq.org/locations/4793473",
+      "status": "ok",
+      "pm25_24h_mean": 47.1,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "usg",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "NED University City Campus",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 24.85402121622299,
+      "longitude": 67.01483943786194,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Agha Khan University IED",
+      "city": "Karachi",
+      "openaq_location_id": 4793983,
+      "openaq_url": "https://explore.openaq.org/locations/4793983",
+      "status": "ok",
+      "pm25_24h_mean": 69.9,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Agha Khan University IED",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 24.8920539,
+      "longitude": 67.0709382,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "NED Main Campus",
+      "city": "Karachi",
+      "openaq_location_id": 4837117,
+      "openaq_url": "https://explore.openaq.org/locations/4837117",
+      "status": "ok",
+      "pm25_24h_mean": 50.8,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "usg",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "NED Main Campus",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 24.9337634173323,
+      "longitude": 67.11354155158995,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Park Road F-8/1 Sector Islamabad",
+      "city": "Islamabad",
+      "openaq_location_id": 4608422,
+      "openaq_url": "https://explore.openaq.org/locations/4608422",
+      "status": "no_recent_data",
+      "pm25_24h_mean": null,
+      "hours_used": 0,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": null,
+      "category": null,
+      "units": "µg/m³",
+      "message": "No PM2.5 data in the last 24 hours.",
+      "openaq_name": "Park Road F-8/1 Sector Islamabad",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 33.7102628,
+      "longitude": 73.0312832,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Rawalpindi Women University",
+      "city": "Rawalpindi",
+      "openaq_location_id": 4554236,
+      "openaq_url": "https://explore.openaq.org/locations/4554236",
+      "status": "ok",
+      "pm25_24h_mean": 71.4,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Rawalpindi Women University",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 33.6452478,
+      "longitude": 73.0646181,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "PHA Office",
+      "city": "Faisalabad",
+      "openaq_location_id": 4837116,
+      "openaq_url": "https://explore.openaq.org/locations/4837116",
+      "status": "no_recent_data",
+      "pm25_24h_mean": null,
+      "hours_used": 0,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": null,
+      "category": null,
+      "units": "µg/m³",
+      "message": "No PM2.5 data in the last 24 hours.",
+      "openaq_name": "PHA Office",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 31.42893,
+      "longitude": 73.08995,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Directorate General Local Gov",
+      "city": "Peshawar",
+      "openaq_location_id": 4609262,
+      "openaq_url": "https://explore.openaq.org/locations/4609262",
+      "status": "ok",
+      "pm25_24h_mean": 108.1,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Directorate General Local Gov ",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 33.9916663,
+      "longitude": 71.435054,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Metropolitan corporation office",
+      "city": "Multan",
+      "openaq_location_id": 4760841,
+      "openaq_url": "https://explore.openaq.org/locations/4760841",
+      "status": "ok",
+      "pm25_24h_mean": 249.5,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "hazardous",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Metropolitan corporation office ",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 30.17631,
+      "longitude": 71.48861,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Commisioner Office",
+      "city": "Gujranwala",
+      "openaq_location_id": 4848175,
+      "openaq_url": "https://explore.openaq.org/locations/4848175",
+      "status": "ok",
+      "pm25_24h_mean": 64.1,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Commisioner Office",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 32.174632,
+      "longitude": 74.195061,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Quetta Commissioner Office",
+      "city": "Quetta",
+      "openaq_location_id": 4757304,
+      "openaq_url": "https://explore.openaq.org/locations/4757304",
+      "status": "ok",
+      "pm25_24h_mean": 21.5,
+      "hours_used": 20,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "moderate",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "Quetta Commissioner Office ",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 30.197606,
+      "longitude": 67.0101348,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "Talpur House, Latifabad, Hyderabad",
+      "city": "Hyderabad",
+      "openaq_location_id": 4897485,
+      "openaq_url": "https://explore.openaq.org/locations/4897485",
+      "status": "insufficient_data",
+      "pm25_24h_mean": null,
+      "hours_used": 4,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T10:00:00Z",
+      "category": null,
+      "units": "µg/m³",
+      "message": "Only 4 of 24 hourly values in the last 24 hours (at least 18 needed).",
+      "openaq_name": "Talpur House, Latifabad, Hyderabad",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 25.367274,
+      "longitude": 68.337884,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    },
+    {
+      "type": "openaq",
+      "display_name": "PHA, Sialkot",
+      "city": "Sialkot",
+      "openaq_location_id": 4629400,
+      "openaq_url": "https://explore.openaq.org/locations/4629400",
+      "status": "ok",
+      "pm25_24h_mean": 56.9,
+      "hours_used": 24,
+      "window_start_utc": "2026-11-12T18:43:27Z",
+      "window_end_utc": "2026-11-13T18:43:27Z",
+      "latest_hour_end_utc": "2026-11-13T18:00:00Z",
+      "category": "unhealthy",
+      "units": "µg/m³",
+      "message": null,
+      "openaq_name": "PHA, Sialkot",
+      "locality": null,
+      "provider": "AirGradient",
+      "owner": "The Urban Unit",
+      "openaq_is_monitor_flag": false,
+      "latitude": 32.505567,
+      "longitude": 74.536067,
+      "licenses": [
+        {
+          "name": "CC BY 4.0",
+          "attribution_name": "The Urban Unit",
+          "attribution_url": null
+        }
+      ]
+    }
+  ]
 }
