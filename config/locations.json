@@ -1,22 +1,20 @@
 {
-  "_instructions": "List up to 15 locations. For live data use type 'openaq' with the OpenAQ location ID (find IDs by running: python scripts/fetch_pm25.py --discover). For a location with no live data use type 'manual' and fill every field from a source you have checked yourself. Delete the two example entries below before publishing.",
+  "_instructions": "Up to 15 locations. Chosen on 13 Nov 2026 from data/candidates.json: all AirGradient low-cost sensors owned by The Urban Unit (licence CC BY 4.0) that had reported within the previous hour; public-institution sites preferred; duplicate listings of the same sensor avoided. Check each one at https://explore.openaq.org/locations/<ID>.",
   "locations": [
-    {
-      "type": "openaq",
-      "openaq_location_id": 0,
-      "display_name": "EXAMPLE – replace with a real OpenAQ location",
-      "city": "Lahore"
-    },
-    {
-      "type": "manual",
-      "display_name": "EXAMPLE – manual snapshot (delete or fill in)",
-      "city": "Quetta",
-      "pm25_24h_mean": null,
-      "period_end_utc": null,
-      "source_name": "",
-      "source_url": "",
-      "recorded_by": "Tehreem Fatima",
-      "notes": "Fill in only from a published 24-hour average you have checked. Leave pm25_24h_mean as null if you have no checked value."
-    }
+    { "type": "openaq", "openaq_location_id": 4527035, "display_name": "Civil Secretariat", "city": "Lahore" },
+    { "type": "openaq", "openaq_location_id": 4618814, "display_name": "Gulberg III", "city": "Lahore" },
+    { "type": "openaq", "openaq_location_id": 4698865, "display_name": "Cantonment", "city": "Lahore" },
+    { "type": "openaq", "openaq_location_id": 4793473, "display_name": "NED University City Campus", "city": "Karachi" },
+    { "type": "openaq", "openaq_location_id": 4793983, "display_name": "Agha Khan University IED", "city": "Karachi" },
+    { "type": "openaq", "openaq_location_id": 4837117, "display_name": "NED Main Campus", "city": "Karachi" },
+    { "type": "openaq", "openaq_location_id": 4608422, "display_name": "Park Road F-8/1 Sector Islamabad", "city": "Islamabad" },
+    { "type": "openaq", "openaq_location_id": 4554236, "display_name": "Rawalpindi Women University", "city": "Rawalpindi" },
+    { "type": "openaq", "openaq_location_id": 4837116, "display_name": "PHA Office", "city": "Faisalabad" },
+    { "type": "openaq", "openaq_location_id": 4609262, "display_name": "Directorate General Local Gov", "city": "Peshawar" },
+    { "type": "openaq", "openaq_location_id": 4760841, "display_name": "Metropolitan corporation office", "city": "Multan" },
+    { "type": "openaq", "openaq_location_id": 4848175, "display_name": "Commisioner Office", "city": "Gujranwala" },
+    { "type": "openaq", "openaq_location_id": 4757304, "display_name": "Quetta Commissioner Office", "city": "Quetta" },
+    { "type": "openaq", "openaq_location_id": 4897485, "display_name": "Talpur House, Latifabad, Hyderabad", "city": "Hyderabad" },
+    { "type": "openaq", "openaq_location_id": 4629400, "display_name": "PHA, Sialkot", "city": "Sialkot" }
   ]
 }
