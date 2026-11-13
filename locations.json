@@ -1,0 +1,22 @@
+{
+  "_instructions": "List up to 15 locations. For live data use type 'openaq' with the OpenAQ location ID (find IDs by running: python scripts/fetch_pm25.py --discover). For a location with no live data use type 'manual' and fill every field from a source you have checked yourself. Delete the two example entries below before publishing.",
+  "locations": [
+    {
+      "type": "openaq",
+      "openaq_location_id": 0,
+      "display_name": "EXAMPLE – replace with a real OpenAQ location",
+      "city": "Lahore"
+    },
+    {
+      "type": "manual",
+      "display_name": "EXAMPLE – manual snapshot (delete or fill in)",
+      "city": "Quetta",
+      "pm25_24h_mean": null,
+      "period_end_utc": null,
+      "source_name": "",
+      "source_url": "",
+      "recorded_by": "Tehreem Fatima",
+      "notes": "Fill in only from a published 24-hour average you have checked. Leave pm25_24h_mean as null if you have no checked value."
+    }
+  ]
+}
