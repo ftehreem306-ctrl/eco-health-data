@@ -181,12 +181,19 @@ def location_metadata(loc: dict) -> dict:
     }
 
 
-def find_pm25_sensor(loc: dict) -> dict | None:
+def find_pm25_sensors(loc: dict) -> list[dict]:
+    """A location can have more than one PM2.5 sensor; return all of them."""
+    out = []
     for sensor in loc.get("sensors") or []:
         param = sensor.get("parameter") or {}
         if param.get("id") == PM25_PARAMETER_ID or param.get("name") == "pm25":
-            return sensor
-    return None
+            out.append(sensor)
+    return out
+
+
+def find_pm25_sensor(loc: dict) -> dict | None:
+    sensors = find_pm25_sensors(loc)
+    return sensors[0] if sensors else None
 
 
 def summarise_hours(hours: list[dict], window_start: datetime, now: datetime) -> dict:
@@ -214,6 +221,7 @@ def summarise_hours(hours: list[dict], window_start: datetime, now: datetime) ->
 def build_openaq_row(client: OpenAQ, entry: dict, scale: dict, now: datetime) -> dict:
     row = {
         "type": "openaq",
+        "openaq_sensor_id": None,
         "display_name": entry.get("display_name"),
         "city": entry.get("city"),
         "openaq_location_id": entry.get("openaq_location_id"),
@@ -238,24 +246,29 @@ def build_openaq_row(client: OpenAQ, entry: dict, scale: dict, now: datetime) ->
         return row
     row.update(location_metadata(loc))
 
-    sensor = find_pm25_sensor(loc)
-    if not sensor:
-        row.update(status="no_recent_data", message="This location has no PM2.5 sensor.")
-        return row
-    units = (sensor.get("parameter") or {}).get("units")
-    if units and units not in ("µg/m³", "ug/m3", "μg/m³"):
-        row.update(status="error", message=f"Unexpected units: {units}")
+    sensors = [x for x in find_pm25_sensors(loc)
+               if (x.get("parameter") or {}).get("units") in (None, "µg/m³", "ug/m3", "μg/m³")]
+    if not sensors:
+        row.update(status="no_recent_data", message="This location has no PM2.5 sensor reporting in µg/m³.")
         return row
 
     window_start = now - timedelta(hours=WINDOW_HOURS)
     row["window_start_utc"], row["window_end_utc"] = iso(window_start), iso(now)
-    try:
-        hours = client.hours(int(sensor["id"]), window_start, now)
-    except requests.RequestException as exc:
-        row.update(status="error", message=f"Could not read hourly data: {exc}")
+    # Try every PM2.5 sensor at the location and keep the one with the most hourly values.
+    s, errors = {"n": 0, "mean": None, "last_end": None}, []
+    for sensor in sensors:
+        try:
+            hours = client.hours(int(sensor["id"]), window_start, now)
+        except requests.RequestException as exc:
+            errors.append(str(exc))
+            continue
+        candidate = summarise_hours(hours, window_start, now)
+        if candidate["n"] > s["n"]:
+            s = candidate
+            row["openaq_sensor_id"] = sensor.get("id")
+    if s["n"] == 0 and errors and len(errors) == len(sensors):
+        row.update(status="error", message=f"Could not read hourly data: {errors[0]}")
         return row
-
-    s = summarise_hours(hours, window_start, now)
     row["hours_used"] = s["n"]
     row["latest_hour_end_utc"] = iso(s["last_end"])
 
