@@ -1,0 +1,12 @@
+{
+  "generated_utc": null,
+  "data_source": {
+    "name": "OpenAQ",
+    "url": "https://openaq.org",
+    "api": "OpenAQ API v3",
+    "note": "No data have been fetched yet."
+  },
+  "method": null,
+  "scale": null,
+  "locations": []
+}
