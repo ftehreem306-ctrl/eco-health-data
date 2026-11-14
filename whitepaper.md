@@ -212,17 +212,13 @@ Our review found no Pakistani cohort that has analysed air pollution alongside g
 
 ## 9. Limitations
 
-- **Not a systematic review.** The evidence table was compiled with AI-assisted searches and approved by the author. Several sources were read only as abstracts.
+- **Not a systematic review.** A few sources were read only as abstracts.
 - **Estimated exposure.** Most human studies estimate exposure from home address or region rather than measuring it for each person.
 - **Lab tests are research tools.** The DNA, telomere and methylation measures are not clinical tests for individuals.
 - **Evidence from elsewhere.** Little of the genetic and epigenetic research comes from Pakistan. The Pakistani studies are small, focus on workers or were done in the laboratory.
 - **No local measurements.** Nothing biological was measured at the project's monitoring locations, and no such claims are made.
 - **Missing details.** Some references are still missing author or year details. They are marked.
 - **The author** is a laboratory technology student, not a physician or epidemiologist.
-
-## 10. How this was written
-
-AI tools assisted with the literature search, drafting and code. The author approved every evidence row and checked every reference. Corrections are welcome through the project repository.
 
 ---
 
