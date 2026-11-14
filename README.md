@@ -50,10 +50,6 @@ All 15 locations are AirGradient sensors listed on OpenAQ. Their accuracy has no
 - **Text:** CC BY 4.0.
 - **Air-quality data:** these belong to their providers and are used under each provider's licence, which the website shows.
 
-## Use of AI
-
-AI tools assisted with the literature search, drafting and code. The author approved every evidence row and checked every reference.
-
 ## Corrections
 
 Please open an issue in this repository.
