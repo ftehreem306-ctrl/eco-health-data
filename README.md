@@ -1,6 +1,13 @@
-# Eco-Health Action Hub
+# Eco-Health Action Hub: Air, DNA and the Next Generation
 
-An educational website about fine particulate air pollution (PM2.5) and health in Pakistan, by Tehreem Fatima (BS Medical Laboratory Technology, final year, NUMS).
+A public-awareness initiative founded by Tehreem Fatima (final-year BS Medical Laboratory Technology, NUMS; interests: cancer genetics, epigenetics, translational medicine).
+
+It explains, in plain language and with references, what research shows about PM2.5 air pollution and:
+
+- DNA damage
+- epigenetics
+- cancer
+- pregnancy and the next generation
 
 **Website:** https://ftehreem306-ctrl.github.io/eco-health-data/
 
@@ -8,16 +15,24 @@ An educational website about fine particulate air pollution (PM2.5) and health i
 
 | Part | File(s) |
 |---|---|
-| A referenced white paper on PM2.5 and health, with a focus on Pakistan | `whitepaper.md` |
-| A single-page website: recent PM2.5 readings for 15 locations, a household "daily defence playbook", and the references | `index.html` |
-| A Python script that downloads PM2.5 data from the OpenAQ API (v3) | `scripts/fetch_pm25.py` |
-| A GitHub Actions workflow that runs the script once a day and commits the result | `.github/workflows/update-pm25.yml` |
-| A workflow, run by hand, that lists all OpenAQ PM2.5 locations in Pakistan | `.github/workflows/discover-locations.yml` |
-| The chosen locations and the AQI scale used for categories | `config/locations.json`, `config/aqi_scale.json` |
-| The data the website reads, and the list of candidate locations | `data/pm25.json`, `data/candidates.json` |
-| Setup instructions | `DATA_SETUP.md` |
+| Referenced white paper (64 references), with every finding labelled known, suspected or unknown | `whitepaper.md` |
+| Single-page website: the evidence in plain language, "what you can do" at four levels, and recent PM2.5 readings for 15 locations | `index.html` |
+| Python script that downloads PM2.5 data from the OpenAQ API (v3) | `scripts/fetch_pm25.py` |
+| Daily GitHub Actions workflow that runs the script and commits the result | `.github/workflows/update-pm25.yml` |
+| Manually run workflow that lists all OpenAQ PM2.5 locations in Pakistan | `.github/workflows/discover-locations.yml` |
+| Chosen locations and the AQI scale used for categories | `config/locations.json`, `config/aqi_scale.json` |
+| Data the website reads, and the list of candidate locations | `data/pm25.json`, `data/candidates.json` |
+| Setup guide and audit report | `DATA_SETUP.md`, `AUDIT.md` |
 
-## How the data are produced
+## What this project does not do
+
+- It does not collect biological samples or genetic data.
+- It does not measure health outcomes at any location.
+- It does not offer diagnostic tests or medical advice.
+
+Genomic and translational research is described only as a future roadmap. That work would happen through ethics-approved partnerships.
+
+## How the air data are produced
 
 For each location, the script averages the hourly PM2.5 values from the previous 24 hours. It then assigns a category using the US EPA Air Quality Index breakpoints for 24-hour PM2.5, as revised in 2024.
 
@@ -29,21 +44,15 @@ The project applies three rules of its own:
 
 All 15 locations are AirGradient sensors listed on OpenAQ. Their accuracy has not been checked against reference instruments.
 
-## What this project does not do
-
-- It does not measure health outcomes at any location.
-- It does not forecast air quality.
-- It does not give medical advice.
-
 ## Licences
 
 - **Code:** MIT License (see `LICENSE`).
-- **Text** (white paper and website wording): CC BY 4.0.
-- **Air quality data:** these belong to their providers and are used under each provider's licence, which is shown on the website. They are accessed through OpenAQ.
+- **Text:** CC BY 4.0.
+- **Air-quality data:** these belong to their providers and are used under each provider's licence, which the website shows.
 
 ## Use of AI
 
-AI tools helped with the literature search, drafting and code. The author checked every reference.
+AI tools assisted with the literature search, drafting and code. The author approved every evidence row and checked every reference.
 
 ## Corrections
 
