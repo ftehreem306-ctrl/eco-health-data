@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Air data | Eco-Health Action Hub</title>
+<meta name="description" content="Recent 24-hour PM2.5 averages from 15 sensors in Pakistan, with the scale and what each category means.">
+<meta name="theme-color" content="#1f6f5c">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap bar">
+  <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="#e3efe9" stroke="#1f6f5c" stroke-width="2"/><circle cx="12" cy="13" r="3" fill="#1f6f5c"/><circle cx="21" cy="11" r="2" fill="#8a929c"/><circle cx="22" cy="20" r="3.6" fill="#1f6f5c"/><circle cx="12.5" cy="22" r="1.6" fill="#8a929c"/></svg><span class="brand-name">Eco-Health Action Hub<small>Air, DNA and the next generation</small></span></a>
+  <nav class="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="cancer.html">Learn</a></li><li><a href="action.html">What you can do</a></li><li><a href="air.html" aria-current="page">Air data</a></li><li><a href="vision.html">Vision</a></li><li><a href="about.html">About</a></li></ul></nav>
+  <a class="btn btn-solid btn-sm head-cta" href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">White paper</a>
+  <details class="nav-toggle"><summary aria-label="Open menu">Menu</summary><nav class="nav-panel" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="cancer.html">Learn</a></li><li><a href="action.html">What you can do</a></li><li><a href="air.html" aria-current="page">Air data</a></li><li><a href="vision.html">Vision</a></li><li><a href="about.html">About</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">White paper</a></li></ul></nav></details>
+</div></header>
+<main id="main">
+<div class="page-head"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Air data</span></nav><h1>Air data</h1><p class="lede">Recent 24-hour PM2.5 averages from 15 sensors in Pakistan's big cities. They show exposure only: no health or DNA effects were measured at these locations.</p></div></div><div class="wrap workspace workspace-wide">
+<aside class="rail" aria-label="On this page"><div class="rail-inner"><p class="rail-title">On this page</p><ol class="toc"><li><a href="#overview">Overview</a></li><li><a href="#readings-sec">Readings by sensor</a></li><li><a href="#scale">The scale</a></li><li><a href="#method">How the data are made</a></li></ol></div></aside>
+<div class="content"><section class="panel" id="overview" aria-labelledby="overview-h"><header class="panel-head"><h2 id="overview-h">Overview</h2></header><div class="panel-body"><p id="updated" class="small">Loading the latest readings…</p><div id="stale" class="alert" hidden></div><div class="kpis">
+  <div class="kpi"><span class="kpi-label">Sensors with a current 24-hour average</span><strong id="kpi-reporting">–</strong></div>
+  <div class="kpi"><span class="kpi-label">Highest 24-hour average</span><strong id="kpi-high">–</strong><span class="kpi-sub" id="kpi-high-where"></span></div>
+  <div class="kpi"><span class="kpi-label">Lowest 24-hour average</span><strong id="kpi-low">–</strong><span class="kpi-sub" id="kpi-low-where"></span></div>
+</div>
+<div class="dist-wrap"><p class="kpi-label">Sensors by category</p><div class="dist" id="dist" role="img" aria-label="Loading"></div><ul class="dist-legend" id="dist-legend"></ul></div></div></section><section class="panel" id="readings-sec" aria-labelledby="readings-sec-h"><header class="panel-head"><h2 id="readings-sec-h">Readings by sensor</h2><span class="panel-meta">15 sensors</span></header><div class="panel-body"><p>Each value is the average of hourly PM2.5 readings over the 24 hours before the last update, in µg/m³ (micrograms per cubic metre of air). Categories follow the US EPA Air Quality Index breakpoints for 24-hour PM2.5. <span class="cite">[<a href="references.html#ref42" aria-label="Reference 42">42</a>]</span> The WHO 24-hour guideline is 15 µg/m³. <span class="cite">[<a href="references.html#ref11" aria-label="Reference 11">11</a>]</span></p>
+<div class="table-scroll"><table id="readings">
+  <caption class="small">PM2.5, 24-hour averages. Source: OpenAQ.</caption>
+  <thead><tr><th scope="col">City</th><th scope="col">Location</th><th scope="col">24-hour average (µg/m³)</th><th scope="col">Category</th><th scope="col">What to do</th><th scope="col">Data period</th></tr></thead>
+  <tbody id="rows"><tr><td colspan="6">Loading…</td></tr></tbody>
+</table></div>
+<noscript><p class="alert">This table needs JavaScript. The raw data are in <a href="data/pm25.json">data/pm25.json</a>.</p></noscript></div></section><section class="panel" id="scale" aria-labelledby="scale-h"><header class="panel-head"><h2 id="scale-h">The scale</h2></header><div class="panel-body"><div class="table-scroll"><table><thead><tr><th scope="col">Category</th><th scope="col">PM2.5, 24-hour average (µg/m³)</th></tr></thead><tbody>
+<tr><td><span class="cat c-good">Good</span></td><td class="num">0.0–9.0</td></tr>
+<tr><td><span class="cat c-moderate">Moderate</span></td><td class="num">9.1–35.4</td></tr>
+<tr><td><span class="cat c-usg">Unhealthy for Sensitive Groups</span></td><td class="num">35.5–55.4</td></tr>
+<tr><td><span class="cat c-unhealthy">Unhealthy</span></td><td class="num">55.5–125.4</td></tr>
+<tr><td><span class="cat c-very_unhealthy">Very Unhealthy</span></td><td class="num">125.5–225.4</td></tr>
+<tr><td><span class="cat c-hazardous">Hazardous</span></td><td class="num">225.5 and above</td></tr></tbody></table></div>
+<p class="small">Breakpoints: US EPA. <span class="cite">[<a href="references.html#ref42" aria-label="Reference 42">42</a>]</span> Actions: EPA messages as reproduced by NOAA <span class="cite">[<a href="references.html#ref43" aria-label="Reference 43">43</a>]</span>, and ATSDR for the Moderate category. <span class="cite">[<a href="references.html#ref44" aria-label="Reference 44">44</a>]</span></p></div></section><section class="panel" id="method" aria-labelledby="method-h"><header class="panel-head"><h2 id="method-h">How the data are made</h2></header><div class="panel-body"><ul class="steps">
+  <li>Readings come from the <a href="https://openaq.org">OpenAQ</a> API (version 3), updated once a day by an automated workflow.</li>
+  <li>Providers and licences: <span id="providers">loading…</span></li>
+  <li>Our own rules, not part of the AQI scale: a value is shown only if at least 18 of the 24 hourly readings exist; averages are truncated to one decimal place; data older than 24 hours are hidden.</li>
+  <li>All 15 locations are AirGradient sensors, chosen on 13 November 2026. Their accuracy has not been checked against reference instruments, and one sensor cannot represent a whole city.</li>
+</ul></div></section></div>
+</div>
+</main>
+<footer class="site-foot"><div class="wrap cols">
+  <div><a class="brand brand-foot" href="index.html"><svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="#e3efe9" stroke="#1f6f5c" stroke-width="2"/><circle cx="12" cy="13" r="3" fill="#1f6f5c"/><circle cx="21" cy="11" r="2" fill="#8a929c"/><circle cx="22" cy="20" r="3.6" fill="#1f6f5c"/><circle cx="12.5" cy="22" r="1.6" fill="#8a929c"/></svg><span class="brand-name">Eco-Health Action Hub</span></a>
+  <p class="disclaimer">Educational information, not medical advice.</p>
+  <p>If you are pregnant, have symptoms or have a health condition, speak to a doctor.</p>
+  <p class="small-foot">Founded by Tehreem Fatima. Project started July 2026. Site first published September 2026. Page text last updated 15 November 2026. Air data last updated: <span id="foot-updated">see the Air data page</span>.</p></div>
+  <div><h2>Learn</h2><ul><li><a href="cancer.html">Air and cancer</a></li><li><a href="dna.html">Your DNA and the air</a></li><li><a href="mothers.html">Mothers and babies</a></li><li><a href="references.html">References</a></li></ul></div>
+  <div><h2>Platform</h2><ul><li><a href="action.html">What you can do</a></li><li><a href="air.html">Air data</a></li><li><a href="vision.html">Vision</a></li><li><a href="about.html">About</a></li></ul></div>
+  <div><h2>Open project</h2><ul><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">White paper</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data">Source code and data</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/issues">Report an error or get in touch</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/LICENSE">Code: MIT License</a></li><li><a href="https://creativecommons.org/licenses/by/4.0/">Text: CC BY 4.0</a></li></ul></div>
+</div></footer>
+<script src="assets/js/air.js" defer></script>
+<script src="assets/js/nav.js" defer></script>
+</body>
+</html>
