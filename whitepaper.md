@@ -1,6 +1,6 @@
 # Air, DNA and the Next Generation: PM2.5, Genetics, Epigenetics and Cancer in Pakistan
 
-**Tehreem Fatima**, Founder, Eco-Health Action Hub · Final-year BS Medical Laboratory Technology, NUMS · Interests: cancer genetics, epigenetics, translational medicine  
+**Tehreem Fatima & Shaheer Murtaza Shehri**, Founders, Eco-Health Action Hub · Final-year BS Medical Laboratory Technology, NUMS · Interests: cancer genetics, epigenetics, translational medicine  
 Eco-Health Action Hub · White paper, version 2.0 · 15 November 2026
 
 ---
