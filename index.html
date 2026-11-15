@@ -3,383 +3,104 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Air, DNA and the Next Generation – Eco-Health Action Hub</title>
-<meta name="description" content="An initiative explaining what science knows, suspects and does not yet know about PM2.5 air pollution, DNA, epigenetics, cancer, pregnancy and the next generation in Pakistan, with recent air-quality readings.">
-<style>
-:root{--ink:#1a1a1a;--muted:#4a4a4a;--bg:#fff;--soft:#f4f6f5;--line:#d5dad7;--accent:#0b5d3b;--link:#0645ad;--warn:#7a3e00;--warnbg:#fff4e0}
-*{box-sizing:border-box}
-html{font-size:106.25%}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-a{color:var(--link)}
-a:focus,button:focus{outline:3px solid #f2a900;outline-offset:2px}
-.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:9}
-header,main,footer{max-width:62rem;margin:0 auto;padding:0 1rem}
-header{padding-top:1.5rem;padding-bottom:1rem;border-bottom:4px solid var(--accent)}
-h1{font-size:1.75rem;line-height:1.25;margin:.2rem 0}
-h2{font-size:1.4rem;margin:2.2rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--line)}
-h3{font-size:1.1rem;margin:1.4rem 0 .4rem}
-.lead{font-size:1.05rem;margin:.4rem 0}
-.byline{color:var(--muted);margin:.2rem 0}
-nav ul{list-style:none;padding:0;margin:.8rem 0 0;display:flex;flex-wrap:wrap;gap:.3rem 1rem}
-.note{background:var(--soft);border-left:4px solid var(--accent);padding:.6rem .9rem;margin:1rem 0}
-.alert{background:var(--warnbg);border-left:4px solid var(--warn);padding:.6rem .9rem;margin:1rem 0;color:#3b1f00}
-table{border-collapse:collapse;width:100%;margin:.6rem 0;font-size:.95rem}
-th,td{border:1px solid var(--line);padding:.45rem .55rem;text-align:left;vertical-align:top}
-th{background:var(--soft)}
-.num{font-variant-numeric:tabular-nums;white-space:nowrap}
-.cat{display:inline-block;padding:.1rem .45rem;border-radius:.3rem;font-weight:600;border:1px solid #0003}
-.c-good{background:#c8e6c9}.c-moderate{background:#fff59d}.c-usg{background:#ffcc80}
-.c-unhealthy{background:#ef9a9a}.c-very_unhealthy{background:#ce93d8}.c-hazardous{background:#6d1b2b;color:#fff}
-.c-none{background:#eceff1}
-.small{font-size:.88rem;color:var(--muted)}
-.label{display:inline-block;font-size:.8rem;font-weight:700;padding:.05rem .4rem;border-radius:.25rem;border:1px solid currentColor;margin-right:.3rem}
-.l-moderate{color:#0b5d3b}.l-limited{color:#7a3e00}
-.cards{display:grid;gap:.8rem;grid-template-columns:1fr}
-.card{border:1px solid var(--line);border-radius:.4rem;padding:.7rem .9rem}
-.card h3{margin:.1rem 0 .3rem;font-size:1.05rem}
-ol.refs li{margin:.35rem 0;font-size:.9rem;overflow-wrap:anywhere}
-.tbc{background:#fff4e0;font-size:.8rem}
-footer{margin-top:2.5rem;padding-top:1rem;padding-bottom:2rem;border-top:4px solid var(--accent);font-size:.92rem}
-@media (min-width:44rem){.cards{grid-template-columns:1fr 1fr}h1{font-size:2rem}}
-/* Readings table becomes stacked cards on narrow screens */
-@media (max-width:43.99rem){
- #readings thead{display:none}
- #readings tr{display:block;border:1px solid var(--line);border-radius:.4rem;margin:.6rem 0;padding:.3rem .5rem}
- #readings td{display:block;border:0;padding:.2rem 0}
- #readings td::before{content:attr(data-label) ": ";font-weight:600}
-}
-
-.kicker{margin:0;color:var(--accent);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.85rem}
-.cards.three{grid-template-columns:1fr}
-@media (min-width:56rem){.cards.three{grid-template-columns:1fr 1fr 1fr}}
-.card ul{padding-left:1.1rem;margin:.3rem 0}
-.card li{margin:.35rem 0}
-.known{border-top:5px solid #0b5d3b}.suspected{border-top:5px solid #b06000}.unknown{border-top:5px solid #6b7280}
-.known h3{color:#0b5d3b}.suspected h3{color:#8a4b00}.unknown h3{color:#4b5563}
-.l-strong{color:#0b5d3b;background:#e6f2ec}
-details{margin:.8rem 0}summary{cursor:pointer;font-weight:600}
-</style>
+<title>Air, DNA and the next generation | Eco-Health Action Hub</title>
+<meta name="description" content="Plain-language, referenced information on PM2.5 air pollution, DNA, epigenetics, cancer and pregnancy in Pakistan.">
+<meta name="theme-color" content="#1f6f5c">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header>
-  <p class="kicker">Eco-Health Action Hub</p>
-  <h1>Air, DNA and the Next Generation</h1>
-  <p class="lead">An initiative that makes the science of air pollution, genes, epigenetics and cancer understandable for families in Pakistan, with evidence labelled honestly as known, suspected or unknown.</p>
-  <p class="byline"><strong>Tehreem Fatima</strong> · Founder, Eco-Health Action Hub · Final-year BS Medical Laboratory Technology, NUMS · Interests: cancer genetics, epigenetics, translational medicine</p>
-  <nav aria-label="Sections"><ul>
-    <li><a href="#glance">At a glance</a></li><li><a href="#cancer">Air and cancer</a></li>
-    <li><a href="#dna">Your DNA and the air</a></li><li><a href="#mothers">Mothers and babies</a></li>
-    <li><a href="#act">What you can do</a></li><li><a href="#data">Recent readings</a></li>
-    <li><a href="#vision">Vision</a></li><li><a href="#methods">Methods</a></li><li><a href="#references">References</a></li>
-  </ul></nav>
-</header>
-
+<header class="site-head"><div class="wrap bar">
+  <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="#e3efe9" stroke="#1f6f5c" stroke-width="2"/><circle cx="12" cy="13" r="3" fill="#1f6f5c"/><circle cx="21" cy="11" r="2" fill="#8a929c"/><circle cx="22" cy="20" r="3.6" fill="#1f6f5c"/><circle cx="12.5" cy="22" r="1.6" fill="#8a929c"/></svg><span class="brand-name">Eco-Health Action Hub<small>Air, DNA and the next generation</small></span></a>
+  <nav class="nav" aria-label="Main"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="cancer.html">Learn</a></li><li><a href="action.html">What you can do</a></li><li><a href="air.html">Air data</a></li><li><a href="vision.html">Vision</a></li><li><a href="about.html">About</a></li></ul></nav>
+  <a class="btn btn-solid btn-sm head-cta" href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">White paper</a>
+  <details class="nav-toggle"><summary aria-label="Open menu">Menu</summary><nav class="nav-panel" aria-label="Main"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="cancer.html">Learn</a></li><li><a href="action.html">What you can do</a></li><li><a href="air.html">Air data</a></li><li><a href="vision.html">Vision</a></li><li><a href="about.html">About</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">White paper</a></li></ul></nav></details>
+</div></header>
 <main id="main">
 
-<section id="glance" aria-labelledby="glance-h">
-<h2 id="glance-h">At a glance: what science says</h2>
-<p>PM2.5 means tiny air particles 2.5 micrometres across or smaller. The <em>largest</em> of them is about 30 times thinner than a human hair [<a href="#ref1">1</a>]. Some may reach the bloodstream [<a href="#ref1">1</a>,<a href="#ref8">8</a>].</p>
-<div class="cards three">
-  <div class="card known"><h3>Known</h3><ul>
-    <li>Polluted air causes lung cancer (WHO's cancer agency, Group 1) [<a href="#ref12">12</a>,<a href="#ref13">13</a>].</li>
-    <li>Lung-cancer risk rises about 9% for each 10 µg/m³ more PM2.5 over the long term [<a href="#ref2">2</a>].</li>
-    <li>Mothers who breathe more polluted air are more likely to have babies born early or small [<a href="#ref4">4</a>,<a href="#ref5">5</a>].</li>
-    <li>Soot particles from the air have been found in placentas, cord blood and the organs of unborn babies [<a href="#ref6">6</a>,<a href="#ref7">7</a>].</li>
-  </ul></div>
-  <div class="card suspected"><h3>Suspected</h3><ul>
-    <li>Pollution helps lung cells that are already faulty grow into tumours (shown in mice) [<a href="#ref15">15</a>].</li>
-    <li>Heavily exposed workers show more DNA damage in blood tests [<a href="#ref17">17</a>,<a href="#ref19">19</a>].</li>
-    <li>Pollution changes chemical "tags" (methylation) on DNA in adults and newborns [<a href="#ref23">23</a>,<a href="#ref24">24</a>].</li>
-    <li>Some inherited gene types make people more sensitive [<a href="#ref33">33</a>,<a href="#ref34">34</a>].</li>
-  </ul></div>
-  <div class="card unknown"><h3>Unknown</h3><ul>
-    <li>What the particles found in the placenta do to the baby [<a href="#ref7">7</a>].</li>
-    <li>Whether pollution makes the body's biological clock run faster: pooled studies could not confirm this [<a href="#ref28">28</a>].</li>
-    <li>Whether grandchildren are affected: our review found no source.</li>
-    <li>Whether cleaner air reverses DNA changes: our review found no source.</li>
-  </ul></div>
+<section class="hero"><svg class="hero-field" viewBox="0 0 160 60" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><circle cx="96.33" cy="9.05" r="0.51" fill="#1f6f5c" fill-opacity="0.31"/><circle cx="120.84" cy="21.94" r="0.21" fill="#8a929c" fill-opacity="0.36"/><circle cx="36.51" cy="26.02" r="0.21" fill="#8a929c" fill-opacity="0.18"/><circle cx="146.88" cy="7.43" r="0.32" fill="#8a929c" fill-opacity="0.42"/><circle cx="156.18" cy="34.63" r="0.44" fill="#8a929c" fill-opacity="0.44"/><circle cx="146.02" cy="10.84" r="0.55" fill="#8a929c" fill-opacity="0.42"/><circle cx="102.58" cy="32.86" r="0.21" fill="#1f6f5c" fill-opacity="0.32"/><circle cx="95.02" cy="35.13" r="0.40" fill="#8a929c" fill-opacity="0.31"/><circle cx="144.26" cy="41.94" r="0.33" fill="#8a929c" fill-opacity="0.42"/><circle cx="119.75" cy="52.51" r="0.59" fill="#8a929c" fill-opacity="0.36"/><circle cx="158.56" cy="7.08" r="0.46" fill="#8a929c" fill-opacity="0.45"/><circle cx="68.54" cy="29.34" r="0.46" fill="#8a929c" fill-opacity="0.25"/><circle cx="124.54" cy="52.53" r="0.36" fill="#8a929c" fill-opacity="0.37"/><circle cx="126.60" cy="34.79" r="0.44" fill="#8a929c" fill-opacity="0.38"/><circle cx="155.95" cy="28.45" r="0.62" fill="#1f6f5c" fill-opacity="0.44"/><circle cx="136.40" cy="38.83" r="0.79" fill="#8a929c" fill-opacity="0.40"/><circle cx="90.89" cy="23.15" r="0.51" fill="#1f6f5c" fill-opacity="0.30"/><circle cx="113.00" cy="10.08" r="0.24" fill="#1f6f5c" fill-opacity="0.35"/><circle cx="142.10" cy="7.76" r="0.33" fill="#8a929c" fill-opacity="0.41"/><circle cx="150.39" cy="4.83" r="0.47" fill="#8a929c" fill-opacity="0.43"/><circle cx="151.32" cy="49.16" r="0.74" fill="#8a929c" fill-opacity="0.43"/><circle cx="107.74" cy="21.53" r="0.65" fill="#8a929c" fill-opacity="0.34"/><circle cx="102.19" cy="33.98" r="0.67" fill="#8a929c" fill-opacity="0.32"/><circle cx="118.75" cy="37.06" r="0.56" fill="#1f6f5c" fill-opacity="0.36"/><circle cx="152.56" cy="46.80" r="0.75" fill="#8a929c" fill-opacity="0.43"/><circle cx="105.02" cy="23.94" r="0.23" fill="#8a929c" fill-opacity="0.33"/><circle cx="70.59" cy="20.40" r="0.18" fill="#1f6f5c" fill-opacity="0.25"/><circle cx="57.14" cy="21.82" r="0.53" fill="#8a929c" fill-opacity="0.22"/><circle cx="101.56" cy="7.37" r="0.62" fill="#8a929c" fill-opacity="0.32"/><circle cx="113.47" cy="29.03" r="0.22" fill="#1f6f5c" fill-opacity="0.35"/><circle cx="98.81" cy="15.89" r="0.60" fill="#1f6f5c" fill-opacity="0.32"/><circle cx="67.43" cy="32.59" r="0.40" fill="#8a929c" fill-opacity="0.25"/><circle cx="149.76" cy="41.77" r="0.35" fill="#8a929c" fill-opacity="0.43"/><circle cx="143.00" cy="19.78" r="0.32" fill="#8a929c" fill-opacity="0.41"/><circle cx="158.91" cy="51.16" r="0.72" fill="#8a929c" fill-opacity="0.45"/><circle cx="139.71" cy="13.60" r="0.50" fill="#8a929c" fill-opacity="0.41"/><circle cx="111.39" cy="56.22" r="0.72" fill="#8a929c" fill-opacity="0.34"/><circle cx="101.61" cy="13.23" r="0.29" fill="#8a929c" fill-opacity="0.32"/><circle cx="147.96" cy="28.77" r="0.60" fill="#8a929c" fill-opacity="0.42"/><circle cx="143.26" cy="45.01" r="0.48" fill="#1f6f5c" fill-opacity="0.41"/><circle cx="143.83" cy="19.95" r="0.69" fill="#8a929c" fill-opacity="0.41"/><circle cx="105.44" cy="24.08" r="0.68" fill="#8a929c" fill-opacity="0.33"/><circle cx="152.96" cy="48.39" r="0.27" fill="#8a929c" fill-opacity="0.43"/><circle cx="158.57" cy="39.44" r="0.41" fill="#8a929c" fill-opacity="0.45"/><circle cx="131.78" cy="31.59" r="0.74" fill="#8a929c" fill-opacity="0.39"/><circle cx="150.42" cy="49.57" r="0.31" fill="#8a929c" fill-opacity="0.43"/><circle cx="92.08" cy="14.43" r="0.47" fill="#8a929c" fill-opacity="0.30"/><circle cx="108.17" cy="7.86" r="0.67" fill="#8a929c" fill-opacity="0.34"/><circle cx="112.61" cy="35.00" r="0.68" fill="#8a929c" fill-opacity="0.35"/><circle cx="153.94" cy="30.10" r="0.53" fill="#8a929c" fill-opacity="0.44"/><circle cx="114.29" cy="43.51" r="0.49" fill="#8a929c" fill-opacity="0.35"/><circle cx="119.04" cy="33.33" r="0.62" fill="#1f6f5c" fill-opacity="0.36"/><circle cx="123.28" cy="14.91" r="0.34" fill="#8a929c" fill-opacity="0.37"/><circle cx="117.94" cy="33.70" r="0.61" fill="#8a929c" fill-opacity="0.36"/><circle cx="110.95" cy="36.75" r="0.45" fill="#8a929c" fill-opacity="0.34"/><circle cx="135.64" cy="27.14" r="0.50" fill="#8a929c" fill-opacity="0.40"/><circle cx="155.72" cy="41.95" r="0.76" fill="#8a929c" fill-opacity="0.44"/><circle cx="147.93" cy="8.23" r="0.25" fill="#8a929c" fill-opacity="0.42"/><circle cx="49.14" cy="14.44" r="0.43" fill="#8a929c" fill-opacity="0.21"/><circle cx="152.36" cy="9.27" r="0.65" fill="#8a929c" fill-opacity="0.43"/><circle cx="115.77" cy="59.39" r="0.64" fill="#1f6f5c" fill-opacity="0.35"/><circle cx="109.62" cy="30.94" r="0.36" fill="#8a929c" fill-opacity="0.34"/><circle cx="95.62" cy="43.33" r="0.18" fill="#8a929c" fill-opacity="0.31"/><circle cx="110.63" cy="1.08" r="0.36" fill="#8a929c" fill-opacity="0.34"/><circle cx="118.41" cy="3.86" r="0.74" fill="#8a929c" fill-opacity="0.36"/><circle cx="157.95" cy="6.29" r="0.35" fill="#1f6f5c" fill-opacity="0.45"/><circle cx="142.99" cy="16.23" r="0.26" fill="#8a929c" fill-opacity="0.41"/><circle cx="153.46" cy="49.14" r="0.35" fill="#1f6f5c" fill-opacity="0.44"/><circle cx="154.05" cy="34.24" r="0.64" fill="#1f6f5c" fill-opacity="0.44"/><circle cx="144.85" cy="5.02" r="0.72" fill="#1f6f5c" fill-opacity="0.42"/><circle cx="149.72" cy="27.23" r="0.40" fill="#8a929c" fill-opacity="0.43"/><circle cx="154.61" cy="16.07" r="0.26" fill="#8a929c" fill-opacity="0.44"/><circle cx="93.77" cy="45.57" r="0.32" fill="#8a929c" fill-opacity="0.31"/><circle cx="73.57" cy="20.82" r="0.29" fill="#1f6f5c" fill-opacity="0.26"/><circle cx="139.14" cy="33.06" r="0.29" fill="#8a929c" fill-opacity="0.40"/><circle cx="155.21" cy="6.38" r="0.72" fill="#8a929c" fill-opacity="0.44"/><circle cx="116.60" cy="50.08" r="0.40" fill="#8a929c" fill-opacity="0.36"/><circle cx="135.20" cy="58.95" r="0.39" fill="#8a929c" fill-opacity="0.40"/><circle cx="136.86" cy="38.16" r="0.43" fill="#8a929c" fill-opacity="0.40"/><circle cx="43.16" cy="7.79" r="0.44" fill="#8a929c" fill-opacity="0.19"/><circle cx="150.32" cy="40.23" r="0.36" fill="#8a929c" fill-opacity="0.43"/><circle cx="92.10" cy="27.57" r="0.25" fill="#8a929c" fill-opacity="0.30"/><circle cx="121.97" cy="14.67" r="0.73" fill="#8a929c" fill-opacity="0.37"/><circle cx="100.60" cy="0.06" r="0.37" fill="#8a929c" fill-opacity="0.32"/><circle cx="117.42" cy="12.06" r="0.46" fill="#1f6f5c" fill-opacity="0.36"/><circle cx="140.62" cy="39.45" r="0.63" fill="#8a929c" fill-opacity="0.41"/><circle cx="104.68" cy="19.57" r="0.70" fill="#1f6f5c" fill-opacity="0.33"/><circle cx="138.37" cy="38.59" r="0.20" fill="#8a929c" fill-opacity="0.40"/><circle cx="151.97" cy="37.64" r="0.66" fill="#8a929c" fill-opacity="0.43"/><circle cx="147.52" cy="48.28" r="0.71" fill="#8a929c" fill-opacity="0.42"/><circle cx="152.04" cy="40.97" r="0.63" fill="#8a929c" fill-opacity="0.43"/><circle cx="129.76" cy="37.57" r="0.58" fill="#8a929c" fill-opacity="0.38"/><circle cx="117.44" cy="32.11" r="0.55" fill="#1f6f5c" fill-opacity="0.36"/><circle cx="139.45" cy="15.13" r="0.22" fill="#8a929c" fill-opacity="0.41"/><circle cx="138.82" cy="12.31" r="0.64" fill="#8a929c" fill-opacity="0.40"/><circle cx="116.49" cy="22.95" r="0.44" fill="#8a929c" fill-opacity="0.35"/><circle cx="141.99" cy="37.02" r="0.58" fill="#1f6f5c" fill-opacity="0.41"/><circle cx="93.69" cy="34.07" r="0.18" fill="#1f6f5c" fill-opacity="0.30"/><circle cx="88.58" cy="40.32" r="0.51" fill="#8a929c" fill-opacity="0.29"/><circle cx="91.79" cy="30.99" r="0.41" fill="#8a929c" fill-opacity="0.30"/><circle cx="158.42" cy="56.18" r="0.19" fill="#8a929c" fill-opacity="0.45"/><circle cx="146.32" cy="58.09" r="0.46" fill="#8a929c" fill-opacity="0.42"/><circle cx="125.36" cy="8.50" r="0.48" fill="#8a929c" fill-opacity="0.37"/><circle cx="151.58" cy="42.20" r="0.33" fill="#8a929c" fill-opacity="0.43"/><circle cx="115.65" cy="1.49" r="0.18" fill="#8a929c" fill-opacity="0.35"/><circle cx="111.79" cy="18.12" r="0.25" fill="#8a929c" fill-opacity="0.34"/><circle cx="95.29" cy="50.41" r="0.18" fill="#8a929c" fill-opacity="0.31"/><circle cx="147.86" cy="7.20" r="0.78" fill="#8a929c" fill-opacity="0.42"/><circle cx="152.71" cy="17.39" r="0.42" fill="#8a929c" fill-opacity="0.43"/><circle cx="159.91" cy="35.35" r="0.42" fill="#8a929c" fill-opacity="0.45"/><circle cx="89.52" cy="2.90" r="0.22" fill="#8a929c" fill-opacity="0.30"/><circle cx="91.04" cy="56.14" r="0.30" fill="#8a929c" fill-opacity="0.30"/><circle cx="118.28" cy="11.39" r="0.39" fill="#8a929c" fill-opacity="0.36"/><circle cx="151.38" cy="48.72" r="0.59" fill="#8a929c" fill-opacity="0.43"/><circle cx="155.66" cy="32.95" r="0.66" fill="#1f6f5c" fill-opacity="0.44"/><circle cx="139.07" cy="27.05" r="0.65" fill="#8a929c" fill-opacity="0.40"/><circle cx="91.12" cy="2.94" r="0.63" fill="#1f6f5c" fill-opacity="0.30"/><circle cx="114.15" cy="20.62" r="0.34" fill="#8a929c" fill-opacity="0.35"/><circle cx="158.28" cy="15.61" r="0.62" fill="#8a929c" fill-opacity="0.45"/><circle cx="122.99" cy="23.66" r="0.27" fill="#1f6f5c" fill-opacity="0.37"/><circle cx="111.70" cy="8.38" r="0.28" fill="#1f6f5c" fill-opacity="0.34"/><circle cx="98.72" cy="5.47" r="0.30" fill="#8a929c" fill-opacity="0.32"/><circle cx="124.20" cy="53.24" r="0.61" fill="#8a929c" fill-opacity="0.37"/><circle cx="107.58" cy="31.45" r="0.38" fill="#8a929c" fill-opacity="0.34"/><circle cx="149.72" cy="12.96" r="0.35" fill="#8a929c" fill-opacity="0.43"/><circle cx="105.91" cy="26.75" r="0.68" fill="#8a929c" fill-opacity="0.33"/><circle cx="150.51" cy="1.31" r="0.20" fill="#8a929c" fill-opacity="0.43"/><circle cx="152.26" cy="28.40" r="0.56" fill="#1f6f5c" fill-opacity="0.43"/><circle cx="104.92" cy="55.61" r="0.61" fill="#8a929c" fill-opacity="0.33"/><circle cx="157.99" cy="14.91" r="0.25" fill="#1f6f5c" fill-opacity="0.45"/><circle cx="119.46" cy="40.92" r="0.71" fill="#8a929c" fill-opacity="0.36"/><circle cx="131.56" cy="45.89" r="0.45" fill="#8a929c" fill-opacity="0.39"/><circle cx="154.10" cy="38.73" r="0.38" fill="#1f6f5c" fill-opacity="0.44"/><circle cx="125.50" cy="23.28" r="0.31" fill="#8a929c" fill-opacity="0.37"/><circle cx="157.01" cy="38.67" r="0.77" fill="#8a929c" fill-opacity="0.44"/><circle cx="136.68" cy="18.44" r="0.19" fill="#8a929c" fill-opacity="0.40"/><circle cx="134.01" cy="25.20" r="0.33" fill="#8a929c" fill-opacity="0.39"/><circle cx="154.50" cy="13.61" r="0.20" fill="#8a929c" fill-opacity="0.44"/><circle cx="108.35" cy="40.95" r="0.28" fill="#8a929c" fill-opacity="0.34"/><circle cx="139.65" cy="30.29" r="0.30" fill="#8a929c" fill-opacity="0.41"/><circle cx="94.69" cy="49.20" r="0.29" fill="#8a929c" fill-opacity="0.31"/><circle cx="141.45" cy="17.70" r="0.78" fill="#8a929c" fill-opacity="0.41"/><circle cx="133.19" cy="56.93" r="0.26" fill="#8a929c" fill-opacity="0.39"/><circle cx="152.45" cy="53.02" r="0.66" fill="#8a929c" fill-opacity="0.43"/><circle cx="154.98" cy="19.75" r="0.30" fill="#8a929c" fill-opacity="0.44"/><circle cx="140.26" cy="1.91" r="0.59" fill="#8a929c" fill-opacity="0.41"/><circle cx="102.77" cy="19.90" r="0.26" fill="#1f6f5c" fill-opacity="0.32"/><circle cx="90.20" cy="21.09" r="0.64" fill="#1f6f5c" fill-opacity="0.30"/><circle cx="157.40" cy="12.44" r="0.42" fill="#8a929c" fill-opacity="0.44"/><circle cx="146.49" cy="25.95" r="0.21" fill="#8a929c" fill-opacity="0.42"/><circle cx="102.62" cy="55.17" r="0.28" fill="#8a929c" fill-opacity="0.32"/><circle cx="152.36" cy="1.82" r="0.45" fill="#8a929c" fill-opacity="0.43"/><circle cx="141.97" cy="2.44" r="0.20" fill="#1f6f5c" fill-opacity="0.41"/><circle cx="154.11" cy="15.42" r="0.67" fill="#8a929c" fill-opacity="0.44"/><circle cx="98.34" cy="16.34" r="0.67" fill="#8a929c" fill-opacity="0.32"/><circle cx="89.59" cy="0.23" r="0.55" fill="#8a929c" fill-opacity="0.30"/><circle cx="130.33" cy="56.60" r="0.19" fill="#8a929c" fill-opacity="0.39"/><circle cx="114.47" cy="57.41" r="0.71" fill="#8a929c" fill-opacity="0.35"/><circle cx="154.72" cy="10.98" r="0.71" fill="#8a929c" fill-opacity="0.44"/><circle cx="146.55" cy="46.37" r="0.57" fill="#8a929c" fill-opacity="0.42"/><circle cx="95.76" cy="21.71" r="0.57" fill="#1f6f5c" fill-opacity="0.31"/><circle cx="96.59" cy="58.82" r="0.62" fill="#8a929c" fill-opacity="0.31"/><circle cx="88.00" cy="5.04" r="0.22" fill="#8a929c" fill-opacity="0.29"/><circle cx="137.13" cy="26.82" r="0.32" fill="#8a929c" fill-opacity="0.40"/><circle cx="129.06" cy="40.45" r="0.62" fill="#8a929c" fill-opacity="0.38"/><circle cx="133.11" cy="7.27" r="0.69" fill="#8a929c" fill-opacity="0.39"/><circle cx="123.93" cy="22.38" r="0.61" fill="#8a929c" fill-opacity="0.37"/><circle cx="151.38" cy="34.70" r="0.39" fill="#8a929c" fill-opacity="0.43"/><circle cx="159.46" cy="30.44" r="0.33" fill="#8a929c" fill-opacity="0.45"/><circle cx="132.11" cy="59.46" r="0.24" fill="#8a929c" fill-opacity="0.39"/><circle cx="146.26" cy="50.43" r="0.76" fill="#1f6f5c" fill-opacity="0.42"/><circle cx="92.19" cy="7.15" r="0.27" fill="#8a929c" fill-opacity="0.30"/><circle cx="125.53" cy="55.81" r="0.39" fill="#8a929c" fill-opacity="0.37"/><circle cx="111.60" cy="15.60" r="0.60" fill="#8a929c" fill-opacity="0.34"/><circle cx="131.95" cy="12.21" r="0.18" fill="#8a929c" fill-opacity="0.39"/><circle cx="134.36" cy="11.11" r="0.37" fill="#8a929c" fill-opacity="0.39"/><circle cx="144.33" cy="32.88" r="0.22" fill="#1f6f5c" fill-opacity="0.42"/><circle cx="105.37" cy="33.01" r="0.52" fill="#1f6f5c" fill-opacity="0.33"/><circle cx="90.71" cy="18.46" r="0.64" fill="#8a929c" fill-opacity="0.30"/><circle cx="123.90" cy="21.43" r="0.42" fill="#8a929c" fill-opacity="0.37"/><circle cx="159.76" cy="21.83" r="0.31" fill="#8a929c" fill-opacity="0.45"/><circle cx="108.72" cy="49.22" r="0.40" fill="#8a929c" fill-opacity="0.34"/><circle cx="112.91" cy="9.75" r="0.18" fill="#8a929c" fill-opacity="0.35"/><circle cx="130.95" cy="54.59" r="0.23" fill="#8a929c" fill-opacity="0.39"/><circle cx="102.39" cy="30.27" r="0.25" fill="#8a929c" fill-opacity="0.32"/><circle cx="119.33" cy="55.53" r="0.24" fill="#8a929c" fill-opacity="0.36"/><circle cx="145.11" cy="58.01" r="0.30" fill="#1f6f5c" fill-opacity="0.42"/><circle cx="155.84" cy="58.53" r="0.50" fill="#1f6f5c" fill-opacity="0.44"/><circle cx="154.57" cy="23.27" r="0.78" fill="#8a929c" fill-opacity="0.44"/><circle cx="146.70" cy="9.62" r="0.68" fill="#8a929c" fill-opacity="0.42"/><circle cx="106.47" cy="50.78" r="0.62" fill="#8a929c" fill-opacity="0.33"/><circle cx="103.96" cy="7.38" r="0.31" fill="#8a929c" fill-opacity="0.33"/><circle cx="152.38" cy="2.47" r="0.55" fill="#8a929c" fill-opacity="0.43"/><circle cx="36.79" cy="50.29" r="0.38" fill="#8a929c" fill-opacity="0.18"/><circle cx="129.69" cy="18.37" r="0.43" fill="#8a929c" fill-opacity="0.38"/><circle cx="108.95" cy="39.53" r="0.42" fill="#8a929c" fill-opacity="0.34"/><circle cx="112.62" cy="10.77" r="0.44" fill="#1f6f5c" fill-opacity="0.35"/></svg><div class="wrap hero-grid">
+  <div class="hero-copy">
+    <h1>What the air in Pakistan does to our DNA, and what we can do about it</h1>
+    <p class="lede">Eco-Health Action Hub turns research on fine particle pollution (PM2.5), genes, epigenetics and cancer into plain language for families. Every finding is labelled as known, suspected or unknown.</p>
+    <div class="hero-actions"><a class="btn btn-solid" href="action.html">See what you can do</a><a class="btn btn-line" href="cancer.html">Start with the science</a></div>
+  </div>
+  <aside class="live-card" aria-labelledby="live-h">
+    <header><h2 id="live-h">Air in 15 sensors</h2><a href="air.html">Open Air data</a></header>
+    <p id="updated" class="small">Loading the latest readings…</p>
+    <div id="stale" class="alert" hidden></div>
+    <div class="kpis">
+  <div class="kpi"><span class="kpi-label">Sensors with a current 24-hour average</span><strong id="kpi-reporting">–</strong></div>
+  <div class="kpi"><span class="kpi-label">Highest 24-hour average</span><strong id="kpi-high">–</strong><span class="kpi-sub" id="kpi-high-where"></span></div>
+  <div class="kpi"><span class="kpi-label">Lowest 24-hour average</span><strong id="kpi-low">–</strong><span class="kpi-sub" id="kpi-low-where"></span></div>
 </div>
-</section>
+<div class="dist-wrap"><p class="kpi-label">Sensors by category</p><div class="dist" id="dist" role="img" aria-label="Loading"></div><ul class="dist-legend" id="dist-legend"></ul></div>
+  </aside>
+</div></section>
 
-<section id="cancer" aria-labelledby="cancer-h">
-<h2 id="cancer-h">Air and cancer</h2>
-<ul>
-  <li><strong>Lung cancer.</strong> Long-term PM2.5 exposure is linked to higher lung-cancer risk: about 9% higher per 10 µg/m³ (relative risk 1.09) [<a href="#ref2">2</a>]. <span class="label l-strong">Known</span></li>
-  <li><strong>People who have never smoked.</strong> They are affected too. The estimate for never-smokers was 1.18, with a lower limit of 1.00 [<a href="#ref2">2</a>]. Scientists at WHO's cancer agency estimate that about 195,000 cases of one common type of lung cancer (adenocarcinoma) worldwide in 2022 were linked to outdoor particle pollution [<a href="#ref3">3</a>,<a href="#ref14">14</a>]. <span class="label l-moderate">Moderate</span></li>
-  <li><strong>How it may happen.</strong>
-    <ul>
-      <li>Many healthy lungs already contain a few cells with cancer-driver mutations, in genes such as EGFR and KRAS [<a href="#ref15">15</a>].</li>
-      <li>In mice, particles caused inflammation that helped these cells grow [<a href="#ref15">15</a>].</li>
-      <li>In never-smokers, lung tumours from more polluted regions carried more genetic changes [<a href="#ref16">16</a>].</li>
-    </ul>
-    These studies cannot show what caused any one person's cancer [<a href="#ref16">16</a>]. <span class="label l-limited">Suspected</span></li>
-  <li><strong>Other cancers.</strong> Our review found no strong source for breast, bladder or liver cancer, or childhood leukaemia, so we make no claim.</li>
-</ul>
-</section>
+<section class="band band-white" aria-labelledby="facts-h"><div class="wrap">
+  <div class="band-head"><h2 id="facts-h">Three facts to start with</h2></div>
+  <div class="facts">
+    <div class="fact"><b>Group 1</b>WHO's cancer agency classifies outdoor air pollution and its particles as causing cancer in humans, with sufficient evidence for lung cancer. <span class="cite">[<a href="references.html#ref12" aria-label="Reference 12">12</a>,<a href="references.html#ref13" aria-label="Reference 13">13</a>]</span></div>
+    <div class="fact"><b>About 195,000</b>cases of one common type of lung cancer (adenocarcinoma) worldwide in 2022 were linked to outdoor particle pollution. <span class="cite">[<a href="references.html#ref3" aria-label="Reference 3">3</a>]</span></div>
+    <div class="fact"><b>52 µg/m³</b>is the average PM2.5 exposure across Punjab's population, more than ten times the WHO annual guideline of 5 µg/m³. <span class="cite">[<a href="references.html#ref10" aria-label="Reference 10">10</a>,<a href="references.html#ref11" aria-label="Reference 11">11</a>]</span></div>
+  </div>
+</div></section>
 
-<section id="dna" aria-labelledby="dna-h">
-<h2 id="dna-h">Your DNA and the air</h2>
-<div class="cards">
-  <div class="card"><h3>Breaks in DNA</h3><p><span class="label l-moderate">Moderate</span> People heavily exposed to smoke from traffic, or from wood, dung or crop-waste fires, show more DNA breaks in their blood cells [<a href="#ref17">17</a>]. They also show more small broken pieces of chromosome [<a href="#ref18">18</a>].</p></div>
-  <div class="card"><h3>Studies from Pakistan</h3><p><span class="label l-limited">Limited</span> Traffic conductors and coal miners in Karak [<a href="#ref19">19</a>], and traffic wardens [<a href="#ref20">20</a>], had more DNA damage than comparison groups. In laboratory tests, Lahore PM2.5 increased DNA-damage markers in cells [<a href="#ref21">21</a>]. These studies are small and do not apply to whole cities.</p></div>
-  <div class="card"><h3>Chemical "tags" on DNA (epigenetics)</h3><p><span class="label l-limited">Suspected</span> In a small experiment, breathing PM2.5 for two hours changed DNA methylation measured in blood [<a href="#ref23">23</a>]. Reviews find inconsistent results [<a href="#ref25">25</a>,<a href="#ref26">26</a>,<a href="#ref27">27</a>].</p></div>
-  <div class="card"><h3>"Biological age"</h3><p><span class="label l-limited">Unclear</span> Single studies in Taiwan and Germany linked pollution to an older "epigenetic age" [<a href="#ref29">29</a>,<a href="#ref30">30</a>]. A 2026 meta-analysis of 18 studies found no significant link [<a href="#ref28">28</a>]. A children's study pointed the opposite way, but not after statistical correction [<a href="#ref32">32</a>].</p></div>
-  <div class="card"><h3>Chromosome "end caps"</h3><p><span class="label l-limited">Suspected</span> In 433,535 UK adults, air pollution was associated with telomere length, a sign linked to ageing. Inherited genetic risk added to the effect [<a href="#ref22">22</a>].</p></div>
-  <div class="card"><h3>Genes that change sensitivity</h3><p><span class="label l-limited">Suspected</span> People with "null" versions of the GSTM1 or GSTT1 genes were often more affected by polluted air [<a href="#ref33">33</a>]. A 2026 review found 89 gene variants that changed pollution's effects on breathing health [<a href="#ref34">34</a>]. Their role is not yet clear [<a href="#ref35">35</a>].</p></div>
-</div>
-</section>
+<section class="band" aria-labelledby="board-h"><div class="wrap">
+  <div class="band-head"><h2 id="board-h">How sure is the science?</h2><p>We sort every finding by how strong the evidence is, so you can tell a proven risk from an open question.</p></div>
+  <div class="board">
+    <section aria-labelledby="b1"><h3 id="b1"><span class="ev ev-known">Known</span></h3><ul>
+      <li>Polluted air causes lung cancer. <span class="cite">[<a href="references.html#ref12" aria-label="Reference 12">12</a>,<a href="references.html#ref13" aria-label="Reference 13">13</a>]</span></li>
+      <li>Long-term exposure raises lung-cancer risk, including in people who have never smoked. <span class="cite">[<a href="references.html#ref2" aria-label="Reference 2">2</a>,<a href="references.html#ref3" aria-label="Reference 3">3</a>]</span></li>
+      <li>Mothers who breathe more polluted air are more likely to have babies born early or small. <span class="cite">[<a href="references.html#ref4" aria-label="Reference 4">4</a>,<a href="references.html#ref5" aria-label="Reference 5">5</a>]</span></li>
+      <li>Soot particles have been found in placentas, cord blood and the organs of unborn babies. <span class="cite">[<a href="references.html#ref6" aria-label="Reference 6">6</a>,<a href="references.html#ref7" aria-label="Reference 7">7</a>]</span></li></ul></section>
+    <section aria-labelledby="b2"><h3 id="b2"><span class="ev ev-suspected">Suspected</span></h3><ul>
+      <li>Particles help lung cells that are already faulty grow into tumours (shown in mice). <span class="cite">[<a href="references.html#ref15" aria-label="Reference 15">15</a>]</span></li>
+      <li>Heavily exposed workers show more DNA damage in blood tests. <span class="cite">[<a href="references.html#ref17" aria-label="Reference 17">17</a>,<a href="references.html#ref19" aria-label="Reference 19">19</a>]</span></li>
+      <li>Pollution changes the chemical "tags" (methylation) on DNA in adults and newborns. <span class="cite">[<a href="references.html#ref23" aria-label="Reference 23">23</a>,<a href="references.html#ref24" aria-label="Reference 24">24</a>]</span></li>
+      <li>Some inherited gene types make people more sensitive. <span class="cite">[<a href="references.html#ref33" aria-label="Reference 33">33</a>,<a href="references.html#ref34" aria-label="Reference 34">34</a>]</span></li></ul></section>
+    <section aria-labelledby="b3"><h3 id="b3"><span class="ev ev-unknown">Unknown</span></h3><ul>
+      <li>What the particles found in the placenta do to the baby. <span class="cite">[<a href="references.html#ref7" aria-label="Reference 7">7</a>]</span></li>
+      <li>Whether pollution speeds up the body's biological clock: pooled studies could not confirm it. <span class="cite">[<a href="references.html#ref28" aria-label="Reference 28">28</a>]</span></li>
+      <li>Whether grandchildren are affected: our review found no source.</li>
+      <li>Whether cleaner air reverses DNA changes: our review found no source.</li></ul></section>
+  </div>
+</div></section>
 
-<section id="mothers" aria-labelledby="m-h">
-<h2 id="m-h">Mothers, babies and the next generation</h2>
-<ul>
-  <li><strong>Birth outcomes.</strong> Across US studies of about 32.8 million births, 48 of 58 air-pollution studies found links between air pollution and babies born early, small or stillborn [<a href="#ref4">4</a>]. <span class="label l-strong">Known</span></li>
-  <li><strong>The global picture.</strong> In 2019, outdoor and indoor PM2.5 together were estimated to contribute to about 5.87 million preterm births and 2.76 million low-birth-weight births worldwide. South Asia had the highest burden [<a href="#ref5">5</a>]. <span class="label l-moderate">Modelled</span></li>
-  <li><strong>Particles reach the unborn baby.</strong> Soot was found in every sample of maternal blood, placenta and cord blood, and in fetal liver, lung and brain tissue [<a href="#ref7">7</a>]. What it does there is not known. <span class="label l-moderate">Present; effect unknown</span></li>
-  <li><strong>Newborn DNA.</strong>
-    <ul>
-      <li>Babies of mothers exposed to more PM2.5 had small methylation differences at a few DNA sites [<a href="#ref24">24</a>].</li>
-      <li>In Belgium, they also had shorter telomeres in cord blood and placenta [<a href="#ref40">40</a>]. In a larger European study, the estimate for exposure during pregnancy was not statistically significant [<a href="#ref41">41</a>].</li>
-    </ul>
-    <span class="label l-limited">Suspected</span></li>
-  <li><strong>Grandchildren and fathers.</strong> Our review found no source on effects passed to grandchildren or through fathers' sperm, so we make no claim.</li>
-</ul>
-</section>
+<section class="band band-white" aria-labelledby="mods-h"><div class="wrap">
+  <div class="band-head"><h2 id="mods-h">Learn in three modules</h2><p>Each module opens with a one-minute summary, then sets out the findings one by one.</p></div>
+  <ol class="modules">
+    <li><a href="cancer.html"><span class="step">1</span><strong>Air and cancer</strong><span>Lung cancer risk, never-smokers, and what tumour genomes show.</span><em>5 findings</em></a></li>
+    <li><a href="dna.html"><span class="step">2</span><strong>Your DNA and the air</strong><span>DNA damage, chemical tags on DNA, biological age and the genes that change sensitivity.</span><em>6 findings</em></a></li>
+    <li><a href="mothers.html"><span class="step">3</span><strong>Mothers, babies and the next generation</strong><span>Birth outcomes, particles in the placenta and what newborn DNA shows.</span><em>6 findings</em></a></li>
+  </ol>
+</div></section>
 
-<section id="act" aria-labelledby="act-h">
-<h2 id="act-h">What you can do: four levels</h2>
-<div class="cards">
-  <div class="card"><h3>1. You</h3><ul>
-    <li>Check the category in the readings below and follow its advice [<a href="#ref42">42</a>,<a href="#ref43">43</a>,<a href="#ref44">44</a>]. <span class="label l-moderate">Moderate</span></li>
-    <li>If you wear a mask, make sure it fits. Leakage around worn masks ranged from 3% to 68% [<a href="#ref45">45</a>]. In Beijing trials, masks improved short-term blood pressure and heart measures [<a href="#ref46">46</a>,<a href="#ref47">47</a>]. <span class="label l-moderate">Moderate</span></li>
-    <li>If you are pregnant, ask your doctor or midwife about masks: we found no source specific to pregnancy.</li>
-  </ul></div>
-  <div class="card"><h3>2. Your home</h3><ul>
-    <li>A HEPA air cleaner sized for the room lowers indoor PM2.5 [<a href="#ref48">48</a>,<a href="#ref49">49</a>,<a href="#ref50">50</a>]. <span class="label l-moderate">Moderate</span></li>
-    <li>In pregnancy, purifiers cut indoor PM2.5 by 29%, but the effect on birth weight was not clear [<a href="#ref51">51</a>,<a href="#ref52">52</a>]. <span class="label l-limited">Limited</span></li>
-    <li>Switching from wood or dung to gas cooking cut smoke a lot, but did not significantly raise birth weight [<a href="#ref53">53</a>]. Lower exposure is still lower exposure.</li>
-    <li>Keep windows closed during pollution peaks [<a href="#ref54">54</a>]. <span class="label l-limited">Limited</span></li>
-    <li>Supplements are not proven to protect against pollution [<a href="#ref23">23</a>,<a href="#ref55">55</a>,<a href="#ref56">56</a>]. In pregnancy, follow your clinician's advice on vitamins. <span class="label l-limited">Very limited</span></li>
-  </ul></div>
-  <div class="card"><h3>3. Community and workplace</h3><ul>
-    <li>Workers with heavy exposure, such as traffic workers and coal miners, showed more DNA damage [<a href="#ref19">19</a>,<a href="#ref20">20</a>]. They may deserve priority in protection and research. <span class="label l-limited">Limited</span></li>
-  </ul></div>
-  <div class="card"><h3>4. Policy</h3><ul>
-    <li>Between 2013 and 2017, China's emission controls cut population-weighted PM2.5 from 61.8 to 42.0 µg/m³ [<a href="#ref57">57</a>].</li>
-    <li>Pakistan's 2023 National Clean Air Policy lists measures such as cleaner fuels and preventing crop burning [<a href="#ref58">58</a>].</li>
-    <li>In Punjab, about 23% of PM2.5 comes from homes, mostly solid-fuel cooking [<a href="#ref10">10</a>].</li>
-  </ul></div>
-</div>
-</section>
+<section class="band" aria-labelledby="tools-h"><div class="wrap">
+  <div class="band-head"><h2 id="tools-h">Use the platform</h2></div>
+  <div class="tools">
+    <a class="tool" href="action.html"><strong>What you can do</strong><span>Steps for you, your home, your workplace and policymakers, each with its evidence label.</span></a>
+    <a class="tool" href="air.html"><strong>Air data</strong><span>24-hour PM2.5 averages from 15 sensors, the category scale and how the data are made.</span></a>
+    <a class="tool" href="references.html"><strong>Evidence library</strong><span>All 64 references behind the site and the white paper, numbered the same way.</span></a>
+  </div>
+</div></section>
 
-<section id="data" aria-labelledby="data-h">
-<h2 id="data-h">Recent PM2.5 readings: the exposure context</h2>
-<p>Each value is the average of hourly PM2.5 readings over the 24 hours before the last update, in µg/m³ (micrograms per cubic metre of air). Categories follow the US EPA Air Quality Index breakpoints for 24-hour PM2.5 [<a href="#ref42">42</a>]. The WHO 24-hour guideline is 15 µg/m³ [<a href="#ref11">11</a>]. These readings show exposure only. No health or DNA effects were measured at these locations.</p>
-<p id="updated" class="note">Loading data…</p>
-<div id="stale" class="alert" hidden></div>
-<table id="readings">
-  <caption class="small" style="text-align:left">PM2.5, 24-hour averages. Source: OpenAQ (see <a href="#methods">Methods</a>).</caption>
-  <thead><tr><th scope="col">City</th><th scope="col">Location</th><th scope="col">24-hour average (µg/m³)</th><th scope="col">Category</th><th scope="col">What to do</th><th scope="col">Data period</th></tr></thead>
-  <tbody id="rows"><tr><td colspan="6">Loading…</td></tr></tbody>
-</table>
-<noscript><p class="alert">The readings table needs JavaScript. The raw data are in <a href="data/pm25.json">data/pm25.json</a>.</p></noscript>
-<details><summary>The scale used for the categories</summary>
-<table>
-  <thead><tr><th scope="col">Category</th><th scope="col">PM2.5, 24-hour average (µg/m³)</th></tr></thead>
-  <tbody>
-    <tr><td><span class="cat c-good">Good</span></td><td class="num">0.0–9.0</td></tr>
-    <tr><td><span class="cat c-moderate">Moderate</span></td><td class="num">9.1–35.4</td></tr>
-    <tr><td><span class="cat c-usg">Unhealthy for Sensitive Groups</span></td><td class="num">35.5–55.4</td></tr>
-    <tr><td><span class="cat c-unhealthy">Unhealthy</span></td><td class="num">55.5–125.4</td></tr>
-    <tr><td><span class="cat c-very_unhealthy">Very Unhealthy</span></td><td class="num">125.5–225.4</td></tr>
-    <tr><td><span class="cat c-hazardous">Hazardous</span></td><td class="num">225.5 and above</td></tr>
-  </tbody>
-</table>
-<p class="small">Breakpoints: US EPA [<a href="#ref42">42</a>]. Actions: EPA messages as reproduced by NOAA [<a href="#ref43">43</a>]; ATSDR for the Moderate category [<a href="#ref44">44</a>].</p>
-</details>
-</section>
+<section class="band band-green" aria-labelledby="vis-h"><div class="wrap split">
+  <div><h2 id="vis-h">Our vision</h2><p>From awareness to genomic and translational research in Pakistan, done ethically.</p><a class="btn btn-light" href="vision.html">Read the vision and roadmap</a></div>
+  <div class="founder-card"><p class="founder-name">Tehreem Fatima</p><p>Founder. Final-year BS Medical Laboratory Technology student at NUMS, with research interests in cancer genetics, epigenetics and translational medicine.</p><a href="about.html">About the initiative</a></div>
+</div></section>
 
-<section id="vision" aria-labelledby="v-h">
-<h2 id="v-h">Vision: from awareness to genomic and translational research</h2>
-<p class="note">This section describes future aims, not current activities.</p>
-<p>Scientists use the word <em>exposome</em> for everything a person is exposed to over a lifetime, studied alongside the genome [<a href="#ref60">60</a>]. Large studies abroad already combine DNA and air-pollution data [<a href="#ref16">16</a>,<a href="#ref22">22</a>,<a href="#ref24">24</a>]. Our review found no Pakistani study that has done this yet.</p>
-<p>Pakistan already has major genetic resources, including PROMIS [<a href="#ref61">61</a>,<a href="#ref62">62</a>] and the Pakistan Genome Resource, with 173,303 people [<a href="#ref63">63</a>]. National guidelines on human biological materials exist (2020), but experts describe gaps in biobank ethics, standards and data governance [<a href="#ref64">64</a>].</p>
-<ol>
-  <li><strong>Now:</strong> plain-language awareness, open exposure data and an open evidence table.</li>
-  <li><strong>Next:</strong> partnerships with ethics-approved research groups to link Pakistani exposure data with genomic and epigenomic studies of cancer and pregnancy.</li>
-  <li><strong>Always:</strong> consent, data protection and community benefit first. This initiative will not collect samples or genetic data without ethical approval.</li>
-</ol>
-</section>
-
-<section id="methods" aria-labelledby="me-h">
-<h2 id="me-h">Methods and data</h2>
-<ul>
-  <li><strong>Evidence.</strong> Every claim comes from an evidence table approved by the author. Findings are labelled known, suspected or unknown, with the type of study. The full text and references are in the <a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">white paper</a>.</li>
-  <li><strong>Laboratory tests.</strong> DNA-damage, telomere and methylation tests are research tools for comparing groups [<a href="#ref40">40</a>,<a href="#ref59">59</a>]. This initiative does not offer or recommend them for individuals.</li>
-  <li><strong>Air data.</strong> Readings come from the <a href="https://openaq.org">OpenAQ</a> API (version 3) and are updated once a day by an automated workflow.
-    <ul>
-      <li><strong>Providers and licences:</strong> <span id="providers">loading…</span></li>
-      <li><strong>Our own rules, not part of the AQI scale:</strong>
-        <ul>
-          <li>A value is shown only if at least 18 of the 24 hourly readings exist.</li>
-          <li>Averages are truncated to one decimal place.</li>
-          <li>Data older than 24 hours are hidden.</li>
-        </ul></li>
-      <li><strong>Sensors.</strong> All 15 locations are AirGradient sensors, chosen on 13 November 2026. Their accuracy has not been checked against reference instruments.</li>
-    </ul></li>
-  <li><strong>Limitations.</strong>
-    <ul>
-      <li>Most human studies estimate exposure from home address or region.</li>
-      <li>Little of the genetic research comes from Pakistan.</li>
-      <li>No biological measurements were made at these locations.</li>
-    </ul></li>
-</ul>
-</section>
-
-<section id="references" aria-labelledby="r-h">
-<h2 id="r-h">References</h2>
-<p>The numbering matches the <a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">white paper</a>. Highlighted entries have bibliographic details that are not yet confirmed.</p>
-<ol class="refs">
-<li id="ref1">US Environmental Protection Agency. Particulate Matter (PM) Basics [Internet]. Washington (DC): US EPA; [cited 2026 Nov 13]. Available from: <a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics">https://www.epa.gov/pm-pollution/particulate-matter-pm-basics</a></li>
-<li id="ref2">Hamra GB, Guha N, Cohen A, Laden F, Raaschou-Nielsen O, Samet JM, et al. Outdoor particulate matter exposure and lung cancer: a systematic review and meta-analysis. Environ Health Perspect. 2014;122(9):906–11. doi:<a href="https://doi.org/10.1289/ehp.1408092">10.1289/ehp.1408092.</a> Errata in: Environ Health Perspect. 2014;122(9):A236. doi:<a href="https://doi.org/10.1289/ehp.122-A236">10.1289/ehp.122-A236</a>; and 2014;122(11):A294. doi:<a href="https://doi.org/10.1289/ehp.122-A294">10.1289/ehp.122-A294</a></li>
-<li id="ref3">Luo G, Zhang Y, Rumgay H, Morgan E, Langselius O, Vignat J, et al. Estimated worldwide variation and trends in incidence of lung cancer by histological subtype in 2022 and over time: a population-based study. Lancet Respir Med. 2025;13(4):348–63. doi:<a href="https://doi.org/10.1016/S2213-2600(24)00428-4">10.1016/S2213-2600(24)00428-4</a></li>
-<li id="ref4">Bekkar B, Pacheco S, Basu R, DeNicola N. Association of air pollution and heat exposure with preterm birth, low birth weight, and stillbirth in the US: a systematic review. JAMA Netw Open. 2020;3(6):e208243. doi:<a href="https://doi.org/10.1001/jamanetworkopen.2020.8243">10.1001/jamanetworkopen.2020.8243</a></li>
-<li id="ref5">Ghosh R, Causey K, Burkart K, Wozniak S, Cohen A, Brauer M. Ambient and household PM2.5 pollution and adverse perinatal outcomes: a meta-regression and analysis of attributable global burden for 204 countries and territories. PLoS Med. 2021;18(9):e1003718. doi:<a href="https://doi.org/10.1371/journal.pmed.1003718">10.1371/journal.pmed.1003718</a></li>
-<li id="ref6">Bové H, Bongaerts E, Slenders E, Bijnens EM, Saenen ND, Gyselaers W, et al. Ambient black carbon particles reach the fetal side of human placenta. Nat Commun. 2019;10:3866. doi:<a href="https://doi.org/10.1038/s41467-019-11654-3">10.1038/s41467-019-11654-3</a></li>
-<li id="ref7">Bongaerts E, Lecante LL, Bové H, Roeffaers MBJ, Ameloot M, Fowler PA, et al. Maternal exposure to ambient black carbon particles and their presence in maternal and fetal circulation and organs: an analysis of two independent population-based observational studies. Lancet Planet Health. 2022;6(10):e804–11. doi:<a href="https://doi.org/10.1016/S2542-5196(22)00200-5">10.1016/S2542-5196(22)00200-5</a></li>
-<li id="ref8">Health Effects Institute. State of Global Air 2025. Boston (MA): HEI; 2025. Available from: <a href="https://www.stateofglobalair.org/sites/default/files/documents/2025-10/soga-2025-report.pdf">https://www.stateofglobalair.org/sites/default/files/documents/2025-10/soga-2025-report.pdf</a></li>
-<li id="ref9">Miller MR, Raftis JB, Langrish JP, McLean SG, Samutrtai P, Connell SP, et al. Inhaled nanoparticles accumulate at sites of vascular disease. ACS Nano. 2017;11(5):4542–52. doi:<a href="https://doi.org/10.1021/acsnano.6b08551">10.1021/acsnano.6b08551</a></li>
-<li id="ref10">World Bank. Punjab Clean Air Program (P508222): Program Information Document. Report No. PIDPC00153. Washington (DC): World Bank; 2024. Available from: <a href="https://documents1.worldbank.org/curated/en/099122424102011829/pdf/P508222137d9a00c1934e1dec002d9866b.pdf">https://documents1.worldbank.org/curated/en/099122424102011829/pdf/P508222137d9a00c1934e1dec002d9866b.pdf</a></li>
-<li id="ref11">World Health Organization. WHO global air quality guidelines: particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide. Geneva: WHO; 2021. Tables 3.1 and 3.24. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK574591/">https://www.ncbi.nlm.nih.gov/books/NBK574591/</a></li>
-<li id="ref12">IARC Working Group on the Evaluation of Carcinogenic Risks to Humans. Outdoor air pollution. Lyon: International Agency for Research on Cancer; 2016. (IARC Monographs on the Evaluation of Carcinogenic Risks to Humans; vol. 109). Available from: <a href="https://www.inchem.org/documents/iarc/iarcmono/v109iarc.pdf">https://www.inchem.org/documents/iarc/iarcmono/v109iarc.pdf</a></li>
-<li id="ref13">Loomis D, Grosse Y, Lauby-Secretan B, El Ghissassi F, Bouvard V, Benbrahim-Tallaa L, et al. The carcinogenicity of outdoor air pollution. Lancet Oncol. 2013;14(13):1262–3. doi:<a href="https://doi.org/10.1016/S1470-2045(13)70487-X">10.1016/S1470-2045(13)70487-X</a></li>
-<li id="ref14">International Agency for Research on Cancer. Global lung cancer incidence according to subtype: new study highlights rising adenocarcinoma rates linked to air pollution [Press Release No. 359]. Lyon: IARC; 2025 Feb 3. Available from: <a href="https://www.iarc.who.int/wp-content/uploads/2025/02/pr359_E.pdf">https://www.iarc.who.int/wp-content/uploads/2025/02/pr359_E.pdf</a></li>
-<li id="ref15">Hill W, Lim EL, Weeden CE, Lee C, Augustine M, Chen K, et al. Lung adenocarcinoma promotion by air pollutants. Nature. 2023;616(7955):159–67. doi:<a href="https://doi.org/10.1038/s41586-023-05874-3">10.1038/s41586-023-05874-3</a></li>
-<li id="ref16">Díaz-Gay M, Zhang T, Hoang PH, et al. <span class="tbc">[authors 4–6 to confirm]</span>. The mutagenic forces shaping the genomes of lung cancer in never smokers. Nature. 2025;644(8075):133–44. doi:<a href="https://doi.org/10.1038/s41586-025-09219-0">10.1038/s41586-025-09219-0</a></li>
-<li id="ref17">Møller P, Gajski G, Gerić M, Haveric A, Stopper H, Bankoglu EE, et al. The comet assay as a tool in human biomonitoring exposure to combustion-derived air pollution − a systematic review and meta-analysis. Mutat Res Rev Mutat Res. 2026;797:108583. doi:<a href="https://doi.org/10.1016/j.mrrev.2025.108583">10.1016/j.mrrev.2025.108583</a></li>
-<li id="ref18">da Silva Junior FC, et al. <span class="tbc">[authors 2–6 to confirm]</span>. Empirical relationship between chromosomal damage and airborne particulate matter: a systematic review and meta-analysis of studies in exposed populations. Mutat Res Rev Mutat Res. 2023;791:108454. doi:<a href="https://doi.org/10.1016/j.mrrev.2023.108454">10.1016/j.mrrev.2023.108454</a></li>
-<li id="ref19">Ullah I, Zahid M, Jawad M, Arsh A. Assessment of DNA damage and oxidative stress among traffic conductors and coal miners. Pak J Med Sci. 2021;37(2):499–502. doi:<a href="https://doi.org/10.12669/pjms.37.2.2848">10.12669/pjms.37.2.2848</a></li>
-<li id="ref20">Rashid S, Arshad M, Siddiqa M, Ahmad R. Evaluation of DNA damage in traffic police wardens of Pakistan due to cadmium and zinc. Sci Total Environ. 2018;630:1360–4. PMID: 29554755. <span class="tbc">[DOI to confirm]</span></li>
-<li id="ref21">Shazad M, Ali MM, Rehman SAu, Javed M, Syed JH, Ullah A, et al. Assessment of fine particulate matter (PM2.5) induced cyto-genotoxicity in a highly polluted urban environment: evidence from Lahore, Pakistan. Water Air Soil Pollut. 2026;237(13):782. doi:<a href="https://doi.org/10.1007/s11270-026-09456-7">10.1007/s11270-026-09456-7</a></li>
-<li id="ref22">Tang L, Li D, Wang J, Su B, Tian Y. Ambient air pollution, genetic risk and telomere length in UK Biobank. J Expo Sci Environ Epidemiol. 2024;34(5):845–52. doi:<a href="https://doi.org/10.1038/s41370-023-00587-1">10.1038/s41370-023-00587-1</a></li>
-<li id="ref23">Zhong J, Karlsson O, Wang G, Li J, Guo Y, Lin X, et al. B vitamins attenuate the epigenetic effects of ambient fine particles in a pilot human intervention trial. Proc Natl Acad Sci U S A. 2017;114(13):3503–8. doi:<a href="https://doi.org/10.1073/pnas.1618545114">10.1073/pnas.1618545114.</a> Correction in: Proc Natl Acad Sci U S A. 2017;114(16):E3367</li>
-<li id="ref24">Gruzieva O, Xu CJ, Yousefi P, Relton C, Merid SK, Breton CV, et al. Prenatal particulate air pollution and DNA methylation in newborns: an epigenome-wide meta-analysis. Environ Health Perspect. 2019;127(5):057012. doi:<a href="https://doi.org/10.1289/EHP4522">10.1289/EHP4522</a></li>
-<li id="ref25">Wu Y, Qie R, Cheng M, Zeng Y, Huang S, Guo C, et al. Air pollution and DNA methylation in adults: a systematic review and meta-analysis of observational studies. Environ Pollut. 2021;284:117152. doi:<a href="https://doi.org/10.1016/j.envpol.2021.117152">10.1016/j.envpol.2021.117152</a></li>
-<li id="ref26">Yu L, Zhao Y, Chen W, Yu G, Miller MR, Li X, et al. A systematic review of observational studies on long-term air pollution exposure and epigenetic alterations in adults. J Glob Health. 2026;16:04087. Available from: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13002177/">https://pmc.ncbi.nlm.nih.gov/articles/PMC13002177/</a></li>
-<li id="ref27">Alfano R, Herceg Z, Nawrot TS, Chadeau-Hyam M, Ghantous A, Plusquin M. The impact of air pollution on our epigenome: how far is the evidence? (A systematic review). Curr Environ Health Rep. 2018;5(4):544–78. doi:<a href="https://doi.org/10.1007/s40572-018-0218-8">10.1007/s40572-018-0218-8</a></li>
-<li id="ref28">Ioannou C, Nawrot TS, Martens DS. Ambient long-term air pollution exposure and epigenetic aging clocks: a systematic review and meta-analysis. Ecotoxicol Environ Saf. 2026;310:119764. doi:<a href="https://doi.org/10.1016/j.ecoenv.2026.119764">10.1016/j.ecoenv.2026.119764</a></li>
-<li id="ref29">Cheng CF, Wu CS, Chan TC, Wang SH. Air pollution and accelerated epigenetic aging: evidence from multiple epigenetic clocks in the Taiwan Biobank. J Hazard Mater. 2026;501:140852. doi:<a href="https://doi.org/10.1016/j.jhazmat.2025.140852">10.1016/j.jhazmat.2025.140852</a></li>
-<li id="ref30">Yao Y, Wolf K, Breitner S, Zhang S, Waldenberger M, Winkelmann J, et al. Long-term exposure to traffic-related air pollution is associated with epigenetic age acceleration. Environ Res. 2026;288(Pt 2):123284. doi:<a href="https://doi.org/10.1016/j.envres.2025.123284">10.1016/j.envres.2025.123284</a></li>
-<li id="ref31">Fadadu RP, Bozack AK, Cardenas A. Chemical and climatic environmental exposures and epigenetic aging: a systematic review. Environ Res. 2025;274:121347. doi:<a href="https://doi.org/10.1016/j.envres.2025.121347">10.1016/j.envres.2025.121347</a></li>
-<li id="ref32">Ni W, Bozack AK, Rifas-Shiman SL, et al. <span class="tbc">[authors 4–6 to confirm]</span>. Long-term exposure to ambient air pollution and epigenetic age acceleration in children. Am J Epidemiol. 2025;194(12):3433–40. doi:<a href="https://doi.org/10.1093/aje/kwaf006">10.1093/aje/kwaf006</a></li>
-<li id="ref33">Dai X, Bowatte G, Lowe AJ, Matheson MC, Gurrin LC, Burgess JA, et al. Do glutathione S-transferase genes modify the link between indoor air pollution and asthma, allergies, and lung function? A systematic review. Curr Allergy Asthma Rep. 2018;18(3):20. doi:<a href="https://doi.org/10.1007/s11882-018-0771-0">10.1007/s11882-018-0771-0</a></li>
-<li id="ref34">Meng Y, et al. <span class="tbc">[authors 2–6 to confirm]</span>. Genetic susceptibility to respiratory health effects from outdoor air pollution: a structured narrative review. Eur Respir Rev. 2026;35(181):250326. doi:<a href="https://doi.org/10.1183/16000617.0326-2025">10.1183/16000617.0326-2025</a></li>
-<li id="ref35">Nugrahaningsih DAA, Wihadmadyatami H, Widyarini S, Wijayaningsih RA. A review of the GSTM1 null genotype modifies the association between air pollutant exposure and health problems. Int J Genomics. 2023;2023:4961487. doi:<a href="https://doi.org/10.1155/2023/4961487">10.1155/2023/4961487</a></li>
-<li id="ref36">Amaral AFS, Ramasamy A, Castro-Giner F, Minelli C, Accordini S, Sørheim IC, et al. Interaction between gas cooking and GSTM1 null genotype in bronchial responsiveness: results from the European Community Respiratory Health Survey. Thorax. 2014;69(6):558–64. doi:<a href="https://doi.org/10.1136/thoraxjnl-2013-204574">10.1136/thoraxjnl-2013-204574</a></li>
-<li id="ref37">Li X, Huang S, Jiao A, Yang X, Yun J, Wang Y, et al. Association between ambient fine particulate matter and preterm birth or term low birth weight: an updated systematic review and meta-analysis. Environ Pollut. 2017;227:596–605. doi:<a href="https://doi.org/10.1016/j.envpol.2017.03.055">10.1016/j.envpol.2017.03.055</a></li>
-<li id="ref38">Holder B, Aplin JD, Gomez-Lopez N, Heazell AEP, James JL, Jones CJP, et al. &#x27;Fetal side&#x27; of the placenta: anatomical mis-annotation of carbon particle &#x27;transfer&#x27; across the human placenta. Nat Commun. 2021;12:7049. doi:<a href="https://doi.org/10.1038/s41467-021-26437-y">10.1038/s41467-021-26437-y</a></li>
-<li id="ref39"><span class="tbc">[Authors to confirm]</span>. Reply to: &#x27;Fetal side&#x27; of the placenta: anatomical mis-annotation of carbon particle &#x27;transfer&#x27; across the human placenta. Nat Commun. 2021. doi:<a href="https://doi.org/10.1038/s41467-021-26438-x">10.1038/s41467-021-26438-x</a></li>
-<li id="ref40">Martens DS, Cox B, Janssen BG, Clemente DBP, Gasparrini A, Vanpoucke C, et al. Prenatal air pollution and newborns&#x27; predisposition to accelerated biological aging. JAMA Pediatr. 2017;171(12):1160–7. doi:<a href="https://doi.org/10.1001/jamapediatrics.2017.3024">10.1001/jamapediatrics.2017.3024</a></li>
-<li id="ref41">Clemente DBP, Vrijheid M, et al. <span class="tbc">[authors 3–6 to confirm]</span>. Prenatal and childhood traffic-related air pollution exposure and telomere length in European children: the HELIX project. Environ Health Perspect. 2019;127(8):087001. doi:<a href="https://doi.org/10.1289/EHP4148">10.1289/EHP4148</a></li>
-<li id="ref42">US Environmental Protection Agency, Air Quality System. AQI breakpoints [code table on the Internet]. Updated 2026 Aug 19 [cited 2026 Nov 13]. Available from: <a href="https://aqs.epa.gov/aqsweb/documents/codetables/aqi_breakpoints.html">https://aqs.epa.gov/aqsweb/documents/codetables/aqi_breakpoints.html</a></li>
-<li id="ref43">National Oceanic and Atmospheric Administration. AQ FAQs – Air Quality Index for PM2.5 [Internet]. NOAA Virtual Lab; [cited 2026 Nov 13]. Available from: <a href="https://vlab.noaa.gov/web/osti-modeling/air-quality/faqs">https://vlab.noaa.gov/web/osti-modeling/air-quality/faqs</a></li>
-<li id="ref44">Agency for Toxic Substances and Disease Registry. PM Guidance for ATSDR Health Assessment Products, June 2024 update. Atlanta (GA): ATSDR; 2024. Available from: <a href="https://www.atsdr.cdc.gov/pha-guidance/resources/ATSDR-Particulate-Matter-Guidance-508.pdf">https://www.atsdr.cdc.gov/pha-guidance/resources/ATSDR-Particulate-Matter-Guidance-508.pdf</a> (the same Moderate-category advice appears in: Utah Division of Air Quality. Forecast legend [Internet]. Available from: <a href="https://air.utah.gov/forecastLegendAQI.html">https://air.utah.gov/forecastLegendAQI.html</a>)</li>
-<li id="ref45">Cherrie JW, Apsley A, Cowie H, Steinle S, Mueller W, Lin C, et al. Effectiveness of face masks used to protect Beijing residents against particulate air pollution. Occup Environ Med. 2018;75(6):446–52. doi:<a href="https://doi.org/10.1136/oemed-2017-104765">10.1136/oemed-2017-104765</a></li>
-<li id="ref46">Langrish JP, Mills NL, Chan JKK, Leseman DLAC, Aitken RJ, Fokkens PHB, et al. Beneficial cardiovascular effects of reducing exposure to particulate air pollution with a simple facemask. Part Fibre Toxicol. 2009;6:8. doi:<a href="https://doi.org/10.1186/1743-8977-6-8">10.1186/1743-8977-6-8</a></li>
-<li id="ref47">Langrish JP, Li X, Wang S, Lee MMV, Barnes GD, Miller MR, et al. Reducing personal exposure to particulate air pollution improves cardiovascular health in patients with coronary heart disease. Environ Health Perspect. 2012;120(3):367–72. doi:<a href="https://doi.org/10.1289/ehp.1103898">10.1289/ehp.1103898</a></li>
-<li id="ref48">Faridi S, Allen RW, Brook RD, Yousefian F, Hassanvand MS, Carlsten C. An updated systematic review and meta-analysis on portable air cleaners and blood pressure: recommendations for users and manufacturers. Ecotoxicol Environ Saf. 2023;263:115227. doi:<a href="https://doi.org/10.1016/j.ecoenv.2023.115227">10.1016/j.ecoenv.2023.115227</a></li>
-<li id="ref49">Xia X, Chan KH, Kwok T, Wu S, Man CL, Ho KF. Effects of long-term indoor air purification intervention on cardiovascular health in elderly: a parallel, double-blinded randomized controlled trial in Hong Kong. Environ Res. 2024. Available from: <a href="https://www.sciencedirect.com/science/article/pii/S0013935124001889">https://www.sciencedirect.com/science/article/pii/S0013935124001889</a> <span class="tbc">[volume and article number still to confirm]</span></li>
-<li id="ref50">WHO Regional Office for Europe. Personal-level actions to reduce air pollution exposure in the WHO European Region. Copenhagen: WHO Regional Office for Europe; [year still to confirm]. Available from: <a href="https://iris.who.int/server/api/core/bitstreams/6cd6af3d-334c-40fa-8620-b1ae4a7a3e2d/content">https://iris.who.int/server/api/core/bitstreams/6cd6af3d-334c-40fa-8620-b1ae4a7a3e2d/content</a></li>
-<li id="ref51">Barn P, Gombojav E, Ochir C, Boldbaatar B, Beejin B, Naidan G, et al. The effect of portable HEPA filter air cleaner use during pregnancy on fetal growth: the UGAAR randomized controlled trial. Environ Int. 2018;121(Pt 1):981–9. doi:<a href="https://doi.org/10.1016/j.envint.2018.08.036">10.1016/j.envint.2018.08.036</a></li>
-<li id="ref52">McCandless LC, Gombojav E, Allen RW. Sensitivity analysis for live birth bias in the Ulaanbaatar Gestation and Air Pollution Research study. Environ Epidemiol. 2022;6(6):e229. doi:<a href="https://doi.org/10.1097/EE9.0000000000000229">10.1097/EE9.0000000000000229</a></li>
-<li id="ref53">Clasen TF, Chang HH, Thompson LM, Kirby MA, Balakrishnan K, Díaz-Artiga A, et al. Liquefied petroleum gas or biomass for cooking and effects on birth weight. N Engl J Med. 2022;387(19):1735–46. doi:<a href="https://doi.org/10.1056/NEJMoa2206734">10.1056/NEJMoa2206734</a></li>
-<li id="ref54">Allen RW, Barn P. Individual- and household-level interventions to reduce air pollution exposures and health risks: a review of the recent literature. Curr Environ Health Rep. 2020;7(4):424–40. doi:<a href="https://doi.org/10.1007/s40572-020-00296-z">10.1007/s40572-020-00296-z</a></li>
-<li id="ref55">Lucock M, Jones P, Veysey M, Beckett E. B vitamins and pollution, an interesting, emerging, yet incomplete picture of folate and the exposome. Proc Natl Acad Sci U S A. 2017;114(20):E3878–9. doi:<a href="https://doi.org/10.1073/pnas.1704662114">10.1073/pnas.1704662114</a></li>
-<li id="ref56">Lee AG, Cowell W, Kannan S, Ganguri HB, Nentin F, Wilson A, et al. Prenatal particulate air pollution and newborn telomere length: effect modification by maternal antioxidant intakes and infant sex. Environ Res. 2020;187:109707. doi:<a href="https://doi.org/10.1016/j.envres.2020.109707">10.1016/j.envres.2020.109707</a></li>
-<li id="ref57">Zhang Q, Zheng Y, Tong D, Shao M, Wang S, Zhang Y, et al. Drivers of improved PM2.5 air quality in China from 2013 to 2017. Proc Natl Acad Sci U S A. 2019;116(49):24463–9. doi:<a href="https://doi.org/10.1073/pnas.1907956116">10.1073/pnas.1907956116</a></li>
-<li id="ref58">Ministry of Climate Change, Government of Pakistan. National Clean Air Policy (NCAP). Islamabad: MoCC; 2023. Available from: <a href="https://mocc.gov.pk/SiteImage/Policy/NCAP%20(28-02-2023">https://mocc.gov.pk/SiteImage/Policy/NCAP%20(28-02-2023</a>).pdf</li>
-<li id="ref59">Ladeira C, et al. <span class="tbc">[authors 2–6 to confirm]</span>. The comet assay as a tool in human biomonitoring studies of environmental and occupational exposure to chemicals—a systematic scoping review. Toxics. 2024;12(4):270. doi:<a href="https://doi.org/10.3390/toxics12040270">10.3390/toxics12040270</a></li>
-<li id="ref60">Wild CP. Complementing the genome with an &quot;exposome&quot;: the outstanding challenge of environmental exposure measurement in molecular epidemiology. Cancer Epidemiol Biomarkers Prev. 2005;14(8):1847–50. doi:<a href="https://doi.org/10.1158/1055-9965.EPI-05-0456">10.1158/1055-9965.EPI-05-0456</a></li>
-<li id="ref61">Saleheen D, Zaidi M, Rasheed A, Ahmad U, Hakeem A, Murtaza M, et al. The Pakistan Risk of Myocardial Infarction Study: a resource for the study of genetic, lifestyle and other determinants of myocardial infarction in South Asia. Eur J Epidemiol. 2009;24(6):329–38. doi:<a href="https://doi.org/10.1007/s10654-009-9334-y">10.1007/s10654-009-9334-y</a></li>
-<li id="ref62">Saleheen D, Natarajan P, Armean IM, Zhao W, Rasheed A, Khetarpal SA, et al. Human knockouts and phenotypic analysis in a cohort with a high rate of consanguinity. Nature. 2017;544(7649):235–9. doi:<a href="https://doi.org/10.1038/nature22034">10.1038/nature22034</a></li>
-<li id="ref63">Koch C, Khalid S, Khan MZ, Bandyadka S, Doyon B, Denning DP, et al. Analysis of 173,303 exomes and genomes in the Pakistan Genome Resource. Nature. 2026;656(8128):670–9. doi:<a href="https://doi.org/10.1038/s41586-026-10667-5">10.1038/s41586-026-10667-5</a></li>
-<li id="ref64">Aijaz J, Anwar N, Hasan Z, Farooq A, Jawaid N, Ng W, et al. Stakeholder recommendations on shaping human biospecimen banking governance in Pakistan. Biopreserv Biobank. 2026 [Epub ahead of print]. doi:<a href="https://doi.org/10.1177/19475535261465204">10.1177/19475535261465204</a></li>
-</ol>
-</section>
 </main>
-
-<footer>
-  <p><strong>Educational information, not medical advice.</strong> If you are pregnant, have symptoms or have a health condition, speak to a doctor.</p>
-  <p>Contact: <a href="https://github.com/ftehreem306-ctrl/eco-health-data/issues">open an issue on GitHub</a>.</p>
-  <p>Project started: July 2026 · This site first published: September 2026 · Page text last updated: 15 November 2026 · Data last updated: <span id="foot-updated">see above</span></p>
-  <p>Licences: code under the <a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/LICENSE">MIT License</a>; text under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Air-quality data belong to their providers. AI tools assisted with research and drafting; the author approved every evidence row and checked every reference.</p>
-</footer>
-
-<script>
-(function () {
-  var TZ = "Asia/Karachi", MAX_AGE_H = 24;
-  var fmt = new Intl.DateTimeFormat("en-GB", {timeZone: TZ, day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", hour12: false});
-  function when(iso) { return iso ? fmt.format(new Date(iso)) + " PKT" : "unknown"; }
-  function ageH(iso) { return iso ? (Date.now() - new Date(iso).getTime()) / 3.6e6 : Infinity; }
-  function el(tag, text, cls) { var e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; }
-  function cell(tr, label, node) { var td = el("td"); td.setAttribute("data-label", label); if (typeof node === "string") td.textContent = node; else if (node) td.appendChild(node); tr.appendChild(td); return td; }
-
-  fetch("data/pm25.json", {cache: "no-cache"}).then(function (r) { return r.json(); }).then(function (d) {
-    var rows = document.getElementById("rows"); rows.textContent = "";
-    var cats = {}; ((d.scale || {}).categories || []).forEach(function (c) { cats[c.key] = c; });
-    var dataAge = ageH(d.generated_utc), dataStale = dataAge > MAX_AGE_H;
-    document.getElementById("updated").textContent = d.generated_utc
-      ? "Data last updated: " + when(d.generated_utc) + ". Values are 24-hour averages ending at that time."
-      : "No data have been fetched yet.";
-    document.getElementById("foot-updated").textContent = when(d.generated_utc);
-    if (dataStale && d.generated_utc) {
-      var s = document.getElementById("stale"); s.hidden = false;
-      s.textContent = "The last update is more than 24 hours old, so values are hidden and shown as “no recent data”.";
-    }
-    var prov = {};
-    (d.locations || []).forEach(function (loc) {
-      var tr = el("tr");
-      cell(tr, "City", loc.city || "");
-      var a = el("a", loc.display_name || "Location");
-      if (loc.openaq_url) { a.href = loc.openaq_url; } else if (loc.source_url) { a.href = loc.source_url; }
-      cell(tr, "Location", a);
-
-      var status = loc.status, value = loc.pm25_24h_mean, note = "";
-      if (status === "ok" && (dataStale || ageH(loc.latest_hour_end_utc) > MAX_AGE_H)) { status = "no_recent_data"; }
-      if (status === "manual_snapshot") { note = "Manual snapshot for the 24 hours ending " + when(loc.snapshot_period_end_utc) + ". This is not current data."; }
-      var show = (status === "ok" || status === "manual_snapshot") && value != null;
-      cell(tr, "24-hour average (µg/m³)", show ? value.toFixed(1) : "—").className = "num";
-
-      var c = show ? cats[loc.category] : null;
-      var label = c ? c.label : (status === "insufficient_data" ? "Not enough data" : status === "error" ? "Error" : "No recent data");
-      cell(tr, "Category", el("span", label, "cat " + (c ? "c-" + c.key : "c-none")));
-
-      var act = el("div");
-      if (c) {
-        if (c.action_sensitive) { act.appendChild(el("div", "Sensitive groups: " + c.action_sensitive)); }
-        if (c.action_everyone) { act.appendChild(el("div", "Everyone else: " + c.action_everyone)); }
-        if (!c.action_sensitive && !c.action_everyone) { act.textContent = "—"; }
-      } else { act.textContent = "—"; }
-      cell(tr, "What to do", act);
-
-      var period = show && status === "ok"
-        ? loc.hours_used + " of 24 hourly values; last reading ending " + when(loc.latest_hour_end_utc)
-        : (note || loc.message || "No data in the last 24 hours.");
-      cell(tr, "Data period", el("span", period, "small"));
-      rows.appendChild(tr);
-
-      (loc.licenses || []).forEach(function (l) {
-        var k = [loc.provider, l.attribution_name, l.name].join("|");
-        prov[k] = (loc.provider || "Unknown provider") + " (owner: " + (l.attribution_name || loc.owner || "not stated") + "), licence " + (l.name || "not stated");
-      });
-    });
-    var pv = Object.keys(prov).map(function (k) { return prov[k]; });
-    document.getElementById("providers").textContent = pv.length ? pv.join("; ") + ", via OpenAQ." : "not available.";
-  }).catch(function () {
-    document.getElementById("updated").textContent = "The data file could not be loaded. No readings are shown.";
-    document.getElementById("rows").innerHTML = "<tr><td colspan='6'>No data available.</td></tr>";
-  });
-})();
-</script>
+<footer class="site-foot"><div class="wrap cols">
+  <div><a class="brand brand-foot" href="index.html"><svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="#e3efe9" stroke="#1f6f5c" stroke-width="2"/><circle cx="12" cy="13" r="3" fill="#1f6f5c"/><circle cx="21" cy="11" r="2" fill="#8a929c"/><circle cx="22" cy="20" r="3.6" fill="#1f6f5c"/><circle cx="12.5" cy="22" r="1.6" fill="#8a929c"/></svg><span class="brand-name">Eco-Health Action Hub</span></a>
+  <p class="disclaimer">Educational information, not medical advice.</p>
+  <p>If you are pregnant, have symptoms or have a health condition, speak to a doctor.</p>
+  <p class="small-foot">Founded by Tehreem Fatima. Project started July 2026. Site first published September 2026. Page text last updated 15 November 2026. Air data last updated: <span id="foot-updated">see the Air data page</span>.</p></div>
+  <div><h2>Learn</h2><ul><li><a href="cancer.html">Air and cancer</a></li><li><a href="dna.html">Your DNA and the air</a></li><li><a href="mothers.html">Mothers and babies</a></li><li><a href="references.html">References</a></li></ul></div>
+  <div><h2>Platform</h2><ul><li><a href="action.html">What you can do</a></li><li><a href="air.html">Air data</a></li><li><a href="vision.html">Vision</a></li><li><a href="about.html">About</a></li></ul></div>
+  <div><h2>Open project</h2><ul><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/whitepaper.md">White paper</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data">Source code and data</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/issues">Report an error or get in touch</a></li><li><a href="https://github.com/ftehreem306-ctrl/eco-health-data/blob/main/LICENSE">Code: MIT License</a></li><li><a href="https://creativecommons.org/licenses/by/4.0/">Text: CC BY 4.0</a></li></ul></div>
+</div></footer>
+<script src="assets/js/air.js" defer></script>
+<script src="assets/js/nav.js" defer></script>
 </body>
 </html>
