@@ -1,6 +1,6 @@
 # Eco-Health Action Hub: Air, DNA and the Next Generation
 
-A public-awareness initiative founded by Tehreem Fatima (final-year BS Medical Laboratory Technology, NUMS; interests: cancer genetics, epigenetics, translational medicine).
+A public-awareness initiative founded by Tehreem Fatima (final-year BS Medical Laboratory Technology, NUMS; interests: cancer genetics, epigenetics, translational medicine) Shaheer Murtaza Shehri (second-year BS AI, NUST).
 
 It explains, in plain language and with references, what research shows about PM2.5 air pollution and:
 
