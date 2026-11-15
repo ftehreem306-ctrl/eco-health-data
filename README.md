@@ -16,7 +16,8 @@ It explains, in plain language and with references, what research shows about PM
 | Part | File(s) |
 |---|---|
 | Referenced white paper (64 references), with every finding labelled known, suspected or unknown | `whitepaper.md` |
-| Single-page website: the evidence in plain language, "what you can do" at four levels, and recent PM2.5 readings for 15 locations | `index.html` |
+| Nine-page website: home dashboard, three learning modules (air and cancer, your DNA, mothers and babies), what you can do, air data, vision, about, references | `index.html`, `cancer.html`, `dna.html`, `mothers.html`, `action.html`, `air.html`, `vision.html`, `about.html`, `references.html` |
+| Shared design, the script that reads the air data, and the page-section navigation | `assets/css/style.css`, `assets/js/air.js`, `assets/js/nav.js` |
 | Python script that downloads PM2.5 data from the OpenAQ API (v3) | `scripts/fetch_pm25.py` |
 | Daily GitHub Actions workflow that runs the script and commits the result | `.github/workflows/update-pm25.yml` |
 | Manually run workflow that lists all OpenAQ PM2.5 locations in Pakistan | `.github/workflows/discover-locations.yml` |
@@ -49,6 +50,10 @@ All 15 locations are AirGradient sensors listed on OpenAQ. Their accuracy has no
 - **Code:** MIT License (see `LICENSE`).
 - **Text:** CC BY 4.0.
 - **Air-quality data:** these belong to their providers and are used under each provider's licence, which the website shows.
+
+## Use of AI
+
+AI tools assisted with the literature search, drafting and code. The author approved every evidence row and checked every reference.
 
 ## Corrections
 
